@@ -3,9 +3,9 @@
 This service publishes a model catalog published by Digdir
 
 The model is hand-coded in the file ./model/model-catalog.ttl
-This model is transformed to the model-catalog standard and exposed through a simple REST endpoint. The code implementing this endpoint is found in the ./api folder.
+This model is transformed to the model-catalog standard and exposed through a simple REST endpoint.
 
-## Running the API locally:
+## Running the API locally
 
 You should work in a virtual environment. To do that, install [venv](https://docs.python.org/3/library/venv.html)
 
@@ -23,15 +23,17 @@ pip3 install --no-cache-dir -r requirements.txt
 python3 app.py
 ```
 
-# In another terminal:
-```
-curl -H "Accep: text/turtle" "http://localhost:5000/model/person"
-```
-
-## Docker
+## Running the API in Docker
 
 To build and run the api in a Docker container:
 ```
 % docker build -t digdir/model-publisher:latest .
 % docker run -p 5000:5000 -d digdir/model-publisher:latest
+```
+
+## Test the endpoint
+
+Regardless if you run the app via Docker or not, in another terminal:
+```
+curl -H "Accep: text/turtle" "http://localhost:5000/"
 ```
