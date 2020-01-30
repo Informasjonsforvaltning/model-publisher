@@ -19,13 +19,13 @@ source .venv/bin/activate
 ```
 Install software and start the endpoint:
 ```
-pip3 install --user --no-cache-dir -r requirements.txt
+pip3 install --no-cache-dir -r requirements.txt
 python3 app.py
 ```
 
 # In another terminal:
 ```
-curl -H "Accep: application/json" "http://localahost:8081/api?q=lakseoppdrett"
+curl -H "Accep: text/turtle" "http://localhost:5000/model/person"
 ```
 
 ## Docker
