@@ -1,0 +1,14 @@
+.DS_Store
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS code
+.vscode
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc

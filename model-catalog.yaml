@@ -1,0 +1,27 @@
+openapi: 3.0.2
+info:
+  title: Model-catalog of Digdir
+  description: Exposes a model-catalog
+  version: '1.0'
+  contact:
+    name: Digitaliseringsdirektoratet
+    url: 'https://digdir.no'
+  license:
+    name: License of API
+    url: 'http://data.norge.no/nlod/no/2.0'
+tags:
+  - name: model-catalog
+    description: catalog operations
+paths:
+  /:
+    get:
+      tags:
+        - model-catalog
+      summary: Returns a model-catalog including models
+      responses:
+        '200':
+          description: OK
+          content:
+            text/turtle:
+              schema:
+                type: string
