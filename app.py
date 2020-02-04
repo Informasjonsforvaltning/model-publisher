@@ -19,14 +19,14 @@ def modelById():
     app.logger.info('Content: %s', content)
     return Response(content, mimetype='text/turtle')
 
-@app.route('/isReady', methods=['GET'])
+@app.route('/ready', methods=['GET'])
 def isReady():
     return "OK"
 
 
-@app.route('/isAlive', methods=['GET'])
+@app.route('/ping', methods=['GET'])
 def isAlive():
     return "OK"
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(host='0.0.0.0', port=8080)
