@@ -1,8 +1,34 @@
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix dc:      <http://purl.org/dc/elements/1.1/#>.
-@prefix exterms: <http://www.example.org/terms/>.
+@prefix perenh: <https://model-publisher.digdir.no/model/person/> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dcatnoinfo: <http://data.norge.no/informationmodel/> .
 
-<http://www.example.org/index.html>
-    exterms:creation-date "August 16, 1999";
-    dc:language "en";
-    dc:creator <http://www.example.org/staffid/85740>.
+perenh:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividual ;
+        dcat:publisher          perenh:Utgiver ;
+        dct:temporal            perenh:Tidsintervall ;
+        dcatnoinfo:description  "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse."@nb ;
+        dcatnoinfo:name         "Felles informasjonsmodell for Person og Enhet"@nb ;
+        dcatnoinfo:version      "1.0"^^xsd:string ;
+        dct:issued              "2016-09-29T00:00:00+01:00"^^xsd:dateTime ;
+        dct:language            "nb"^^xsd:string ;
+        dct:modified            "2019-07-04T00:00:00+01:00"^^xsd:dateTime ;
+        dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
+        owl:versionInfo         "1.0"^^xsd:string ;
+        adms:status             "Fullført"^^xsd:string ;
+        dcat:contactPoint       "informasjonsforvaltning@digdir.no"^^xsd:string ;
+        dcat:keyword            "Person"^^xsd:string , "Enhet"^^xsd:string , "Adresse"^^xsd:string ;
+        dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
+        dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/naringsliv> .
+
+perenh:Utgiver  a       foaf:Agent , owl:NamedIndividual ;
+        dct:identifier  "991825827" ;
+        dct:type        "Organisasjonsledd"@nb ;
+        foaf:name       "Digitaliseringsdirektoratet"@nb .
+
+perenh:Tidsintervall  a  dct:PeriodOfTime , owl:NamedIndividual ;
+        dcat:startDate  "2016-09-29T00:00:00+01:00"^^xsd:dateTime .
