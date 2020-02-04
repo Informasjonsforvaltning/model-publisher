@@ -28,12 +28,12 @@ python3 app.py
 To build and run the api in a Docker container:
 ```
 % docker build -t digdir/model-publisher:latest .
-% docker run -p 5000:5000 -d digdir/model-publisher:latest
+% docker run -p 8080:8080 -d digdir/model-publisher:latest
 ```
 
 ## Test the endpoint
 
 Regardless if you run the app via Docker or not, in another terminal:
 ```
-curl -H "Accep: text/turtle" "http://localhost:5000/"
+  curl -H "Accep: text/turtle" "http://localhost:8080/model/person"
 ```
