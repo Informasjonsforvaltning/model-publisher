@@ -1,5 +1,6 @@
 import os
 from flask import Flask, Response
+from flask_negotiate import produces
 
 app = Flask(__name__)
 
@@ -12,6 +13,7 @@ def hello():
     return 'Hello, World!'
 
 @app.route('/model/person')
+@produces('text/turtle')
 def modelById():
     text = open(data_file, 'r+')
     content = text.read()

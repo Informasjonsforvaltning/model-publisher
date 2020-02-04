@@ -35,5 +35,5 @@ To build and run the api in a Docker container:
 
 Regardless if you run the app via Docker or not, in another terminal:
 ```
-% curl -H "Accep: text/turtle" "http://localhost:8080/model/person"
+% curl -H "Accept: text/turtle" "http://localhost:8080/model/person"
 ```
