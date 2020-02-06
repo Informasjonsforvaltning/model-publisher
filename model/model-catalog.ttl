@@ -25,10 +25,21 @@ perenh:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividua
         dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
         dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/naringsliv> .
 
-perenh:Utgiver  a       foaf:Agent , owl:NamedIndividual ;
-        dct:identifier  "991825827" ;
-        dct:type        "Organisasjonsledd"@nb ;
-        foaf:name       "Digitaliseringsdirektoratet"@nb .
+perenh:Utgiver  a               foaf:Agent , owl:NamedIndividual ;
+        dct:identifier          "991825827"^^xsd:string ;
+        dct:type                "Organisasjonsledd"@nb ;
+        foaf:name               "Digitaliseringsdirektoratet"@nb .
 
-perenh:Tidsintervall  a  dct:PeriodOfTime , owl:NamedIndividual ;
-        dcat:startDate  "2016-09-29T00:00:00+01:00"^^xsd:dateTime .
+perenh:Tidsintervall  a         dct:PeriodOfTime , owl:NamedIndividual ;
+        dcat:startDate          "2016-09-29T00:00:00+01:00"^^xsd:dateTime .
+
+perenh:Katalog  a               dcat:Catalog , owl:NamedIndividual ;
+        dct:publisher           perenh:Utgiver ;
+        dcat:record             perenh:Katalogpost ;
+        dct:description         "Katalog med oversikt over Digitaliseringsdirektoratets modeller"@nb ;
+        dct:title               "Digitaliseringsdirektoratets modellkatalog"@nb .
+
+perenh:Katalogpost  a           dcat:CatalogRecord , owl:NamedIndividual ;
+        foaf:primaryTopic       perenh:PersonOgEnhet ;
+        dct:identifier          "123abc"^^xsd:string ;
+        dct:title               "Felles informasjonsmodell for Person og Enhet"@nb .
