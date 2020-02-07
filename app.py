@@ -1,30 +1,18 @@
 import os
 from flask import Flask, Response
-from flask_negotiate import produces
+import rdflib
 
 app = Flask(__name__)
 
-
-basedir = os.path.abspath(os.path.dirname(__file__))
-data_file = os.path.join(basedir, 'model/model-catalog.ttl')
-
 @app.route('/')
-def hello():
-    return 'Hello, World!'
-
-@app.route('/model/person')
-@produces('text/turtle')
 def modelById():
-    text = open(data_file, 'r+')
-    content = text.read()
-    text.close()
-    app.logger.info('Content: %s', content)
-    return Response(content, mimetype='text/turtle')
+    g=rdflib.Graph()
+    g.parse('model/model-catalog.ttl', format='turtle')
+    return Response(g.serialize(format='turtle', encoding='utf8'), mimetype='text/turtle')
 
 @app.route('/ready', methods=['GET'])
 def isReady():
     return "OK"
-
 
 @app.route('/ping', methods=['GET'])
 def isAlive():

@@ -1,5 +1,4 @@
 flask
-Flask-Negotiate
 pytest
-schemathesis
 requests
+rdflib
