@@ -1,8 +1,181 @@
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix dc:      <http://purl.org/dc/elements/1.1/#>.
-@prefix exterms: <http://www.example.org/terms/>.
+@prefix perenh: <https://model-publisher.digdir.no/model/person/> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dcatnoinfo: <http://data.norge.no/informationmodel/> .
 
-<http://www.example.org/index.html>
-    exterms:creation-date "August 16, 1999";
-    dc:language "en";
-    dc:creator <http://www.example.org/staffid/85740>.
+perenh:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividual ;
+        dcatnoinfo:containsModelElement
+                perenh:Enhet , perenh:Person ;
+        dcat:publisher          perenh:Utgiver ;
+        dct:temporal            perenh:Tidsintervall ;
+        dcatnoinfo:description  "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse."@nb ;
+        dcatnoinfo:name         "Felles informasjonsmodell for Person og Enhet"@nb ;
+        dcatnoinfo:version      "1.0"^^xsd:string ;
+        dct:issued              "2016-09-29T00:00:00+01:00"^^xsd:dateTime ;
+        dct:language            "nb"^^xsd:string ;
+        dct:modified            "2019-07-04T00:00:00+01:00"^^xsd:dateTime ;
+        dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
+        owl:versionInfo         "1.0"^^xsd:string ;
+        adms:status             "Fullført"^^xsd:string ;
+        dcat:contactPoint       "informasjonsforvaltning@digdir.no"^^xsd:string ;
+        dcat:keyword            "Person"^^xsd:string , "Enhet"^^xsd:string , "Adresse"^^xsd:string ;
+        dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
+        dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/naringsliv> .
+
+perenh:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
+        dct:description  "Katalog med oversikt over Digitaliseringsdirektoratets modeller"@nb ;
+        dct:publisher    perenh:Utgiver ;
+        dct:title        "Digitaliseringsdirektoratets modellkatalog"@nb ;
+        dcat:record      perenh:Katalogpost .
+
+perenh:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
+        dct:identifier  "991825827"^^xsd:string ;
+        dct:type        "Organisasjonsledd"@nb ;
+        foaf:name       "Digitaliseringsdirektoratet"@nb .
+
+perenh:Tidsintervall  a  owl:NamedIndividual , dct:PeriodOfTime ;
+        dcat:startDate  "2016-09-29T00:00:00+01:00"^^xsd:dateTime .
+
+perenh:Katalogpost  a      owl:NamedIndividual , dcat:CatalogRecord ;
+        dct:identifier     "123abc"^^xsd:string ;
+        dct:title          "Felles informasjonsmodell for Person og Enhet"@nb ;
+        foaf:primaryTopic  perenh:PersonOgEnhet .
+
+perenh:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       perenh:fulltNavn , perenh:fødselsdato , perenh:navn , perenh:dødssted , perenh:dødsdato , perenh:statsborgerskap , perenh:sivilstand , perenh:fødested ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:name              "Person"@nb .
+
+perenh:Enhet  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       perenh:organisasjonsnummer ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:name              "Enhet"@nb .
+
+perenh:Personnavn  a                 owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       perenh:etternavn , perenh:mellomnavn , perenh:fornavn ;
+        dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.brreg.no/api/concepts/d7fd4965-8d4e-460c-855b-e8b839c2e012"^^xsd:anyURI ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:name              "Enhet"@nb .
+
+perenh:OrganisasjonsnummerType
+        a                            dcatnoinfo:SimpleType , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.brreg.no/api/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c"^^xsd:anyURI ;
+        dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
+        dcatnoinfo:name              "Organisasjonsnummer"@nb ;
+        dcatnoinfo:typeDefinitionReference
+                "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
+        xsd:length                   "9"^^xsd:nonNegativeInteger ;
+        xsd:pattern                  "[0-9]+"^^xsd:string .
+
+perenh:NavnType  a                   dcatnoinfo:SimpleType , owl:NamedIndividual ;
+        dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
+        dcatnoinfo:name              "Navn"@nb ;
+        dcatnoinfo:typeDefinitionReference
+                "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
+        xsd:maxLength                "100"^^xsd:nonNegativeInteger .
+
+perenh:DatoType  a                   dcatnoinfo:SimpleType , owl:DatatypeProperty ;
+        dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
+        dcatnoinfo:name              "Dato"@nb ;
+        dcatnoinfo:typeDefinitionReference
+                "http://www.w3.org/2001/XMLSchema#dateTime"^^xsd:anyURI .
+
+perenh:fulltNavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/d7fd4965-8d4e-460c-855b-e8b839c2e012"^^xsd:anyURI ;
+        dcatnoinfo:name           "fulltNavn"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           perenh:NavnType ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
+perenh:navn  a                   dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "navn"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          perenh:Personnavn ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+perenh:statsborgerskap
+        a                         dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/1fd1c81e-34d0-4d70-a83d-74eb1e3b901d"^^xsd:anyURI ;
+        dcatnoinfo:name           "statsborgerskap"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           perenh:NavnType ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
+perenh:fødselsdato  a             dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/fb531ec9-a8c7-41b3-ac5e-8c162855c28e"^^xsd:anyURI ;
+        dcatnoinfo:name           "fødselsdato"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           perenh:DatoType ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
+perenh:fødested  a                dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/d37f8cc2-4c86-4721-b84d-31269e3ea13b"^^xsd:anyURI ;
+        dcatnoinfo:name           "fødested"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           perenh:NavnType ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
+perenh:dødsdato  a                dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/593582bd-b467-407a-aefc-1b2005583ecc"^^xsd:anyURI ;
+        dcatnoinfo:name           "dødsdato"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           perenh:DatoType ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+
+perenh:dødssted  a                dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/9b45000d-45db-4ff5-abff-c57c46ba262f"^^xsd:anyURI ;
+        dcatnoinfo:name           "dødssted"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           perenh:NavnType ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+
+perenh:sivilstand  a              dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/2ed65ba4-2d89-4446-9e81-16ddb2063391"^^xsd:anyURI ;
+        dcatnoinfo:name           "sivilstand"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           perenh:NavnType ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
+perenh:organisasjonsnummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "organisasjonsnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          perenh:OrganisasjonsnummerType ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+perenh:fornavn  a                 dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/e341398f-009f-422a-8b81-fa286c091a84"^^xsd:anyURI ;
+        dcatnoinfo:name           "fornavn"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           perenh:NavnType ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
+perenh:mellomnavn  a              dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/99c0cbc0-9cc4-47e9-8077-058a5b69af29"^^xsd:anyURI ;
+        dcatnoinfo:name           "mellomnavn"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           perenh:NavnType ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
+perenh:etternavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/26ccfaf7-6eba-4926-86b9-7502e726cce3"^^xsd:anyURI ;
+        dcatnoinfo:name           "etternavn"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           perenh:NavnType ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
