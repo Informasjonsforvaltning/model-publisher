@@ -12,3 +12,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.pyc
+
+.hypothesis
+.pytest_cache

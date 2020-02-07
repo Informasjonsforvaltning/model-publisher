@@ -31,6 +31,14 @@ To build and run the api in a Docker container:
 % docker run -p 8080:8080 -d digdir/model-publisher:latest
 ```
 
+## Running tests
+We use [pytest](https://docs.pytest.org/en/latest/) and [schemathesis](https://github.com/kiwicom/schemathesis) for testing the API against the [openAPI specification](./model-catalog.yaml).
+
+To run the tests:
+```
+pytest test_api.py
+```
+
 ## Test the endpoint
 
 Regardless if you run the app via Docker or not, in another terminal:
