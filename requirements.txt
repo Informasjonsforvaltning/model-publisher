@@ -2,3 +2,4 @@ flask
 requests
 rdflib
 gunicorn
+python-dotenv

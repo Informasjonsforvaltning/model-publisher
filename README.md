@@ -5,10 +5,8 @@ This service publishes a model catalog published by Digdir
 The model is hand-coded in the file ./model/model-catalog.ttl
 This model is transformed to the model-catalog standard and exposed through a simple REST endpoint.
 
-## Running the API locally
-
+## Install requirements
 You should work in a virtual environment. To do that, install [venv](https://docs.python.org/3/library/venv.html)
-
 ```
 sudo apt-get install python3-venv
 ```
@@ -17,18 +15,22 @@ Create and activate your virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-Install software and start the endpoint:
+Install software:
 ```
 pip3 install --no-cache-dir -r requirements.txt
-python3 app.py
 ```
-
+## Running the API locally
+ Start the endpoint by simply:
+```
+% cd src
+% python3 app.py
+```
 ## Running the API in a wsgi-server (gunicorn)
 ```
 % cd src
 % gunicorn wsgi:app --config=config.py
 ```
-## Running the API in Docker
+## Running the wsgi-seriver in Docker
 
 To build and run the api in a Docker container:
 ```
@@ -48,5 +50,5 @@ pytest test_api.py
 
 Regardless if you run the app via Docker or not, in another terminal:
 ```
-% curl -H "Accept: text/turtle" "http://localhost:8080/model/person"
+% curl -H "Accept: text/turtle" "http://localhost:8080/"
 ```
