@@ -30,7 +30,7 @@ pip3 install --no-cache-dir -r requirements.txt
 % cd src
 % gunicorn wsgi:app --config=config.py
 ```
-## Running the wsgi-seriver in Docker
+## Running the wsgi-server in Docker
 
 To build and run the api in a Docker container:
 ```
