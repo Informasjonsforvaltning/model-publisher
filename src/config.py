@@ -27,9 +27,14 @@ class CustomGunicornLogger(glogging.Logger):
         # Add filters to Gunicorn logger
         logger = logging.getLogger("gunicorn.access")
         logger.addFilter(PingFilter())
+        logger.addFilter(ReadyFilter())
 
 class PingFilter(logging.Filter):
     def filter(self, record):
         return 'GET /ping' not in record.getMessage()
+
+class ReadyFilter(logging.Filter):
+    def filter(self, record):
+        return 'GET /ready' not in record.getMessage()
 
 logger_class = CustomGunicornLogger
