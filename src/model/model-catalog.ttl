@@ -9,7 +9,7 @@
 
 perenh:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividual ;
         dcatnoinfo:containsModelElement
-                perenh:Enhet , perenh:Person ;
+                perenh:Aktør , perenh:Enhet , perenh:Person ;
         dcat:publisher          perenh:Utgiver ;
         dct:temporal            perenh:Tidsintervall ;
         dcatnoinfo:description  "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse."@nb ;
@@ -45,6 +45,11 @@ perenh:Katalogpost  a      owl:NamedIndividual , dcat:CatalogRecord ;
         dct:title          "Felles informasjonsmodell for Person og Enhet"@nb ;
         foaf:primaryTopic  perenh:PersonOgEnhet .
 
+perenh:Aktør  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       perenh:identifikator , perenh:kontaktinformasjon ;
+        dcatnoinfo:modelElementType  "rotObjektstype"^^xsd:string ;
+        dcatnoinfo:name              "Aktør"@nb .
+
 perenh:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       perenh:fulltNavn , perenh:fødselsdato , perenh:navn , perenh:dødssted , perenh:dødsdato , perenh:statsborgerskap , perenh:sivilstand , perenh:fødested ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
@@ -55,10 +60,21 @@ perenh:Enhet  a                      owl:NamedIndividual , dcatnoinfo:ModelEleme
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:name              "Enhet"@nb .
 
+perenh:Identifikator  a              dcatnoinfo:ModelElement , owl:NamedIndividual ;
+        dcatnoinfo:hasProperty       perenh:gyldighetsperiode , perenh:utstedtAvAutoritet , perenh:utstedtDato , perenh:identifikatortype , perenh:identifikatorverdi ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:name              "Identifikator"@nb .
+
+perenh:Kontaktinformasjon
+        a                            dcatnoinfo:ModelElement , owl:NamedIndividual ;
+        dcatnoinfo:hasProperty       perenh:mobiltelefonnummer , perenh:telefonnummer , perenh:epostadresse ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:name              "Kontaktinformasjon"@nb .
+
 perenh:Personnavn  a                 owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       perenh:etternavn , perenh:mellomnavn , perenh:fornavn ;
         dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.brreg.no/api/concepts/d7fd4965-8d4e-460c-855b-e8b839c2e012"^^xsd:anyURI ;
-        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:modelElementType  "datatype"^^xsd:string ;
         dcatnoinfo:name              "Enhet"@nb .
 
 perenh:OrganisasjonsnummerType
@@ -81,6 +97,12 @@ perenh:Tekst  a                      dcatnoinfo:SimpleType , owl:NamedIndividual
 perenh:DatoKlokkeslett  a            dcatnoinfo:SimpleType , owl:DatatypeProperty ;
         dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
         dcatnoinfo:name              "DatoKlokkeslett"@nb ;
+        dcatnoinfo:typeDefinitionReference
+                "http://www.w3.org/2001/XMLSchema#dateTime"^^xsd:anyURI .
+
+perenh:Dato  a                       dcatnoinfo:SimpleType , owl:DatatypeProperty ;
+        dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
+        dcatnoinfo:name              "Dato"@nb ;
         dcatnoinfo:typeDefinitionReference
                 "http://www.w3.org/2001/XMLSchema#dateTime"^^xsd:anyURI .
 
@@ -235,6 +257,71 @@ perenh:etternavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
         dcatnoinfo:type           perenh:Tekst ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
         xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
+perenh:identifikator  a          owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          perenh:Identifikator ;
+        dcatnoinfo:propertyType  "rolle"^^xsd:string ;
+        dcatnoinfo:name          "identifikator"@nb .
+
+perenh:kontaktinformasjon
+        a                        owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          perenh:Kontaktinformasjon ;
+        dcatnoinfo:propertyType  "rolle"^^xsd:string ;
+        dcatnoinfo:name          "kontaktinformasjon"@nb .
+
+perenh:identifikatorverdi
+        a                        owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          perenh:Tekst ;
+        dcatnoinfo:name          "identifikatorverdi"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+perenh:identifikatortype
+        a                        owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          perenh:Tekst ;
+        dcatnoinfo:name          "identifikatortype"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+perenh:utstedtDato  a            owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          perenh:Dato ;
+        dcatnoinfo:name          "utstedtDato"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+perenh:utstedtAvAutoritet
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "utstedtAvAutoritet"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          perenh:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+perenh:gyldighetsperiode
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "gyldighetsperiode"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          dct:PeriodOfTime ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+perenh:epostadresse  a           dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "epostadresse"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          perenh:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+perenh:telefonnummer  a          dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "telefonnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          perenh:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+perenh:mobiltelefonnummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "mobiltelefonnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          perenh:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 perenh:Kvinne  a         owl:NamedIndividual , dcatnoinfo:Codename ;
         dcatnoinfo:name  "kvinne"^^xsd:string .
