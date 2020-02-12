@@ -8,6 +8,9 @@
 # VS code
 .vscode
 
+# IntelliJ IDEA
+.idea
+
 # Python
 __pycache__/
 *.py[cod]
