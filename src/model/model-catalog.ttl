@@ -53,11 +53,13 @@ perenh:Aktør  a                      owl:NamedIndividual , dcatnoinfo:ModelElem
 perenh:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       perenh:fulltNavn , perenh:fødselsdato , perenh:navn , perenh:dødssted , perenh:dødsdato , perenh:statsborgerskap , perenh:sivilstand , perenh:fødested ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:isSubclassOf      perenh:Aktør ;
         dcatnoinfo:name              "Person"@nb .
 
 perenh:Enhet  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       perenh:organisasjonsnummer ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:isSubclassOf      perenh:Aktør ;
         dcatnoinfo:name              "Enhet"@nb .
 
 perenh:Identifikator  a              dcatnoinfo:ModelElement , owl:NamedIndividual ;
