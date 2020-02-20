@@ -65,7 +65,7 @@ digdir:AdresseKatalogpost
         foaf:primaryTopic  digdir:AdresseModell .
 
 digdir:KontaktOss  a       owl:NamedIndividual , vcard:Kind ;
-        vcard:hasEmail     <informasjonsforvaltning@digdir.no> ;
+        vcard:hasEmail     <informasjonsforvaltning@digdir.no> .
 
 digdir:Aktør  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       digdir:adresse , digdir:identifikator , digdir:kontaktinformasjon ;
