@@ -16,7 +16,7 @@ digdir:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividua
         dcatnoinfo:description  "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse."@nb ;
         dcatnoinfo:name         "Felles informasjonsmodell for Person og Enhet"@nb ;
         dcatnoinfo:version      "1.0"^^xsd:string ;
-        dct:issued              "2016-09-29T00:00:00+01:00"^^xsd:dateTime ;
+        dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            "nb"^^xsd:string ;
         dct:modified            "2019-07-04T00:00:00+01:00"^^xsd:dateTime ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
