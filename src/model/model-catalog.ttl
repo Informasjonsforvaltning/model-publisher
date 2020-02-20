@@ -5,6 +5,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix dcatnoinfo: <http://data.norge.no/informationmodel/> .
 
 digdir:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividual ;
@@ -21,7 +22,7 @@ digdir:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividua
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             "Fullført"^^xsd:string ;
-        dcat:contactPoint       "informasjonsforvaltning@digdir.no"^^xsd:string ;
+        dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Person"^^xsd:string , "Enhet"^^xsd:string , "Adresse"^^xsd:string ;
         dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
         dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/naringsliv> .
@@ -33,7 +34,7 @@ digdir:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedIndi
         dcatnoinfo:description  "Overordnet informasjonsmodell for Adresse."@nb ;
         dcatnoinfo:name         "Felles informasjonsmodell for Adresse"@nb ;
         dct:title               "Felles informasjonsmodell for Adresse"@nb ;
-        dcat:contactPoint       "informasjonsforvaltning@digdir.no"^^xsd:string ;
+        dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Adresse"^^xsd:string ;
         dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> .
 
@@ -62,6 +63,9 @@ digdir:AdresseKatalogpost
         dct:identifier     "abc123"^^xsd:string ;
         dct:title          "Felles informasjonsmodell for Adresse"@nb ;
         foaf:primaryTopic  digdir:AdresseModell .
+
+digdir:KontaktOss  a       owl:NamedIndividual , vcard:Kind ;
+        vcard:hasEmail     <informasjonsforvaltning@digdir.no> ;
 
 digdir:Aktør  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       digdir:adresse , digdir:identifikator , digdir:kontaktinformasjon ;
