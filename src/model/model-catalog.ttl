@@ -64,8 +64,10 @@ digdir:AdresseKatalogpost
         dct:title          "Felles informasjonsmodell for Adresse"@nb ;
         foaf:primaryTopic  digdir:AdresseModell .
 
-digdir:KontaktOss  a       owl:NamedIndividual , vcard:Kind ;
-        vcard:hasEmail     <informasjonsforvaltning@digdir.no> .
+digdir:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
+        vcard:fn            "Digitalisation department"@en , "Avdeling for digitalisering"@nn , "Avdeling for digitalisering"@nb ;
+        vcard:hasEmail      <mailto:informasjonsforvaltning@digdir.no> ;
+        vcard:hasTelephone  <tel:12345678> .
 
 digdir:Aktør  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       digdir:adresse , digdir:identifikator , digdir:kontaktinformasjon ;
