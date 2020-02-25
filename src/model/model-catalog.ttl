@@ -23,7 +23,7 @@ digdir:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividua
         owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             "Fullført"^^xsd:string ;
         dcat:contactPoint       digdir:KontaktOss ;
-        dcat:keyword            "Person"^^xsd:string , "Enhet"^^xsd:string , "Adresse"^^xsd:string ;
+        dcat:keyword            "Person"@nb , "Person"@en, "Person"@nn , "Enhet"@nb , "Adresse"@nb ;
         dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
         dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/naringsliv> .
 
