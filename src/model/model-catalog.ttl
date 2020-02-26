@@ -35,7 +35,7 @@ digdir:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedIndi
         dcatnoinfo:name         "Felles informasjonsmodell for Adresse"@nb ;
         dct:title               "Felles informasjonsmodell for Adresse"@nb ;
         dcat:contactPoint       digdir:KontaktOss ;
-        dcat:keyword            "Adresse"^^xsd:string ;
+        dcat:keyword            "Adresse"@nb ;
         dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> .
 
 digdir:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
