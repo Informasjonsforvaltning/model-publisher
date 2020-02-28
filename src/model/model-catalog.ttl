@@ -75,7 +75,7 @@ digdir:Aktør  a                      owl:NamedIndividual , dcatnoinfo:ModelElem
         dcatnoinfo:name              "Aktør"@nb .
 
 digdir:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElement ;
-        dcatnoinfo:hasProperty       digdir:fulltNavn , digdir:fødselsdato , digdir:navn , digdir:dødssted , digdir:dødsdato , digdir:statsborgerskap , digdir:sivilstand , digdir:fødested ;
+        dcatnoinfo:hasProperty       digdir:fulltNavn , digdir:fødselsdato , digdir:navn , digdir:kjønn , digdir:dødssted , digdir:dødsdato , digdir:statsborgerskap , digdir:sivilstand , digdir:fødested ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      digdir:Aktør ;
         dcatnoinfo:name              "Person"@nb .
