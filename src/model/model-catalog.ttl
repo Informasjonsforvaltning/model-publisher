@@ -20,6 +20,7 @@ digdir:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividua
         dct:language            "nb"^^xsd:string ;
         dct:modified            "2019-07-04T00:00:00+01:00"^^xsd:dateTime ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
+        dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse. Felles forståelse av begreper og informasjon om person og enhet. Standardisert struktur for konsistent bruk og representasjon av informasjon om personer og enheter på tvers av virksomheter og løsninger."@nb ; 
         owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             "Fullført"^^xsd:string ;
         dcat:contactPoint       digdir:KontaktOss ;
@@ -34,6 +35,7 @@ digdir:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedIndi
         dcatnoinfo:description  "Overordnet informasjonsmodell for Adresse."@nb ;
         dcatnoinfo:name         "Felles informasjonsmodell for Adresse"@nb ;
         dct:title               "Felles informasjonsmodell for Adresse"@nb ;
+        dct:description         "Overordnet informasjonsmodell for Adresse."@nb ;
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Adresse"@nb ;
         dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> .
