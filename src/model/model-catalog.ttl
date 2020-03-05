@@ -20,7 +20,7 @@ digdir:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividua
         dct:language            "nb"^^xsd:string ;
         dct:modified            "2019-07-04T00:00:00+01:00"^^xsd:dateTime ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
-        dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse. Felles forståelse av begreper og informasjon om person og enhet. Standardisert struktur for konsistent bruk og representasjon av informasjon om personer og enheter på tvers av virksomheter og løsninger."@nb ; 
+        dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse. Felles forståelse av begreper og informasjon om person og enhet. Standardisert struktur for konsistent bruk og representasjon av informasjon om personer og enheter på tvers av virksomheter og løsninger."@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             "Fullført"^^xsd:string ;
         dcat:contactPoint       digdir:KontaktOss ;
@@ -134,7 +134,7 @@ digdir:Vegadresse  a                dcatnoinfo:ModelElement , owl:NamedIndividua
 
 digdir:Personnavn  a                 owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       digdir:etternavn , digdir:mellomnavn , digdir:fornavn ;
-        dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.brreg.no/api/concepts/d7fd4965-8d4e-460c-855b-e8b839c2e012"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy     "http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
         dcatnoinfo:modelElementType  "datatype"^^xsd:string ;
         dcatnoinfo:name              "Personnavn"@nb .
 
@@ -160,7 +160,7 @@ digdir:Matrikkelnummer  a           owl:NamedIndividual , dcatnoinfo:ModelElemen
 
 digdir:OrganisasjonsnummerType
         a                            dcatnoinfo:SimpleType , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.brreg.no/api/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy     "http://data.brreg.no/begrep/28155"^^xsd:anyURI ;
         dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
         dcatnoinfo:name              "Organisasjonsnummer"@nb ;
         dcatnoinfo:typeDefinitionReference
@@ -214,7 +214,7 @@ digdir:Kommunenummer  a             dcatnoinfo:CodeList , owl:NamedIndividual ;
         dcatnoinfo:name              "Kommunenummer"@nb .
 
 digdir:fulltNavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/d7fd4965-8d4e-460c-855b-e8b839c2e012"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
         dcatnoinfo:name           "fulltNavn"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           digdir:Tekst ;
@@ -235,21 +235,21 @@ digdir:kjønn  a                  dcatnoinfo:Property , owl:NamedIndividual ;
 
 digdir:statsborgerskap
         a                         dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/1fd1c81e-34d0-4d70-a83d-74eb1e3b901d"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/88804c5a-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
         dcatnoinfo:name           "statsborgerskap"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           digdir:Landkode ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:fødselsdato  a             dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/fb531ec9-a8c7-41b3-ac5e-8c162855c28e"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/5138da10-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
         dcatnoinfo:name           "fødselsdato"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           digdir:DatoKlokkeslett ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:fødested  a                dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/d37f8cc2-4c86-4721-b84d-31269e3ea13b"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/5138da0e-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
         dcatnoinfo:name           "fødested"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           digdir:Tekst ;
@@ -262,21 +262,21 @@ digdir:fødeland  a               dcatnoinfo:Property , owl:NamedIndividual ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:dødsdato  a                dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/593582bd-b467-407a-aefc-1b2005583ecc"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/be5d8b85-c3fb-11e9-8d53-005056825ca0"^^xsd:anyURI ;
         dcatnoinfo:name           "dødsdato"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           digdir:DatoKlokkeslett ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:dødssted  a                dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/9b45000d-45db-4ff5-abff-c57c46ba262f"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/5138d9f2-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
         dcatnoinfo:name           "dødssted"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           digdir:Tekst ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:sivilstand  a              dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/2ed65ba4-2d89-4446-9e81-16ddb2063391"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
         dcatnoinfo:name           "sivilstand"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           digdir:Tekst ;
@@ -328,7 +328,7 @@ digdir:næringskode  a            dcatnoinfo:Property , owl:NamedIndividual ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:fornavn  a                 dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/e341398f-009f-422a-8b81-fa286c091a84"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/5138da05-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
         dcatnoinfo:name           "fornavn"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           digdir:Tekst ;
@@ -336,14 +336,14 @@ digdir:fornavn  a                 dcatnoinfo:Property , owl:NamedIndividual ;
         xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:mellomnavn  a              dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/99c0cbc0-9cc4-47e9-8077-058a5b69af29"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/88804c2f-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
         dcatnoinfo:name           "mellomnavn"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           digdir:Tekst ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:etternavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/26ccfaf7-6eba-4926-86b9-7502e726cce3"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/46f4d714-4c6c-11e8-bb3e-005056821322"^^xsd:anyURI ;
         dcatnoinfo:name           "etternavn"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           digdir:Tekst ;
