@@ -31,13 +31,19 @@ digdir:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedIndi
         dcatnoinfo:containsModelElement
                 digdir:Adresse , digdir:GeografiskAdresse , digdir:OffisiellAdresse , digdir:Postboksadresse , digdir:Matrikkeladresse , digdir:Vegadresse ;
         dcat:publisher          digdir:Utgiver ;
-        dcatnoinfo:description  "Overordnet informasjonsmodell for Adresse."@nb ;
+        dcatnoinfo:description  "Overordnet informasjonsmodell for Adresse. Formål: Felles forståelse av adressebegrep og standardiserte informasjonsstrukturer for konsistent bruk og representasjon av adresser."@nb ;
         dcatnoinfo:name         "Felles informasjonsmodell for Adresse"@nb ;
         dct:title               "Felles informasjonsmodell for Adresse"@nb ;
         dct:description         "Overordnet informasjonsmodell for Adresse."@nb ;
+        dcatnoinfo:version      "1.0"^^xsd:string ;
+        dct:issued              "2016-09-28T00:00:00+01:00"^^xsd:dateTime ;
+        dct:language            "nb"^^xsd:string ;
+        owl:versionInfo         "1.0"^^xsd:string ;
+        adms:status             "Fullført"^^xsd:string ;
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Adresse"@nb ;
-        dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> .
+        dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> ;
+        dcat:theme              <https://psi.norge.no/los/tema/eiendom> .
 
 digdir:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
         dct:description  "Katalog med oversikt over Digitaliseringsdirektoratets modeller"@nb ;
@@ -102,36 +108,42 @@ digdir:Kontaktinformasjon
 
 digdir:Adresse  a                   dcatnoinfo:ModelElement , owl:NamedIndividual ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
-        dcatnoinfo:name              "Adresse"@nb .
+        dcatnoinfo:name              "Adresse"@nb ;
+        dcatnoinfo:belongsToModule   "Adresse"@nb .
 
 digdir:GeografiskAdresse  a         dcatnoinfo:ModelElement , owl:NamedIndividual ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      digdir:Adresse ;
-        dcatnoinfo:name              "GeografiskAdresse"@nb .
+        dcatnoinfo:name              "GeografiskAdresse"@nb ;
+        dcatnoinfo:belongsToModule   "Adresse"@nb .
 
 digdir:OffisiellAdresse  a         dcatnoinfo:ModelElement , owl:NamedIndividual ;
         dcatnoinfo:hasProperty       digdir:adresseId , digdir:representasjonspunkt ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      digdir:GeografiskAdresse ;
-        dcatnoinfo:name              "OffisiellAdresse"@nb .
+        dcatnoinfo:name              "OffisiellAdresse"@nb ;
+        dcatnoinfo:belongsToModule   "Adresse"@nb .
 
 digdir:Postboksadresse  a           dcatnoinfo:ModelElement , owl:NamedIndividual ;
         dcatnoinfo:hasProperty       digdir:postboksnummer , digdir:postboksanleggsNavn , digdir:poststed ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      digdir:GeografiskAdresse ;
-        dcatnoinfo:name              "Postboksadresse"@nb .
+        dcatnoinfo:name              "Postboksadresse"@nb ;
+        dcatnoinfo:belongsToModule   "Adresse"@nb .
 
 digdir:Matrikkeladresse  a          dcatnoinfo:ModelElement , owl:NamedIndividual ;
         dcatnoinfo:hasProperty       digdir:bruksenhetsnummer , digdir:adressetilleggsnavn , digdir:matrikkelnummer , digdir:undernummer ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      digdir:OffisiellAdresse ;
-        dcatnoinfo:name              "Matrikkeladresse"@nb .
+        dcatnoinfo:name              "Matrikkeladresse"@nb ;
+        dcatnoinfo:belongsToModule   "Adresse"@nb .
 
 digdir:Vegadresse  a                dcatnoinfo:ModelElement , owl:NamedIndividual ;
         dcatnoinfo:hasProperty       digdir:bruksenhetsnummer , digdir:adressenavn , digdir:adressenummer , digdir:poststed , digdir:adressekode , digdir:adressetilleggsnavn , digdir:kommunenummer ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      digdir:OffisiellAdresse ;
-        dcatnoinfo:name              "Vegadresse"@nb .
+        dcatnoinfo:name              "Vegadresse"@nb ;
+        dcatnoinfo:belongsToModule   "Adresse"@nb .
 
 digdir:Personnavn  a                 owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       digdir:etternavn , digdir:mellomnavn , digdir:fornavn ;
@@ -651,15 +663,3 @@ digdir:GjenlevendePartner
 
 digdir:Uoppgitt  a       owl:NamedIndividual , dcatnoinfo:Codename ;
         dcatnoinfo:name  "uoppgitt"^^xsd:string .
-
-digdir:NO  a             owl:NamedIndividual , dcatnoinfo:Codename ;
-        dcatnoinfo:name  "NO"^^xsd:string .
-
-digdir:SE  a             owl:NamedIndividual , dcatnoinfo:Codename ;
-        dcatnoinfo:name  "SE"^^xsd:string .
-
-digdir:DK  a             owl:NamedIndividual , dcatnoinfo:Codename ;
-        dcatnoinfo:name  "DK"^^xsd:string .
-
-digdir:US  a             owl:NamedIndividual , dcatnoinfo:Codename ;
-        dcatnoinfo:name  "US"^^xsd:string .
