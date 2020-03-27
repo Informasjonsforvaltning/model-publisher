@@ -345,8 +345,7 @@ digdir:organisasjonsform
 digdir:næringskode  a            dcatnoinfo:Property , owl:NamedIndividual ;
         dcatnoinfo:name          "næringskode"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
-        dcatnoinfo:type          digdir:Tekst ;
-        xsd:maxOccurs            "*"^^xsd:nonNegativeInteger .
+        dcatnoinfo:type          digdir:Tekst .
 
 digdir:fornavn  a                 dcatnoinfo:Property , owl:NamedIndividual ;
         dcatnoinfo:isDescribedBy  "http://begrepskatalogen/begrep/5138da05-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
