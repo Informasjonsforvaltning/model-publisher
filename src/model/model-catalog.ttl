@@ -83,13 +83,13 @@ digdir:Aktør  a                      owl:NamedIndividual , dcatnoinfo:ModelElem
         dcatnoinfo:belongsToModule   "Aktør"@nb .
 
 digdir:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElement ;
-        dcatnoinfo:hasProperty       digdir:fulltNavn , digdir:fødselsdato , digdir:navn , digdir:kjønn , digdir:dødssted , digdir:dødsdato , digdir:statsborgerskap , digdir:sivilstand , digdir:fødested , digdir:fødeland , digdir:dødsland , digdir:opprinneligNavn , digdir:adresse ;
+        dcatnoinfo:hasProperty       digdir:fulltNavn , digdir:fødselsdato , digdir:navn , digdir:kjønn , digdir:dødssted , digdir:dødsdato , digdir:statsborgerskap , digdir:sivilstand , digdir:fødested , digdir:fødeland , digdir:dødsland , digdir:opprinneligNavn , digdir:personadresse ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      digdir:Aktør ;
         dcatnoinfo:name              "Person"@nb .
 
 digdir:Enhet  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
-        dcatnoinfo:hasProperty       digdir:organisasjonsnummer , digdir:enhetsnavn , digdir:organisasjonsform , digdir:næringskode , digdir:adresse ;
+        dcatnoinfo:hasProperty       digdir:organisasjonsnummer , digdir:enhetsnavn , digdir:organisasjonsform , digdir:næringskode , digdir:enhetsadresse ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      digdir:Aktør ;
         dcatnoinfo:name              "Enhet"@nb .
@@ -125,7 +125,7 @@ digdir:OffisiellAdresse  a         dcatnoinfo:ModelElement , owl:NamedIndividual
         dcatnoinfo:belongsToModule   "Adresse"@nb .
 
 digdir:Postboksadresse  a           dcatnoinfo:ModelElement , owl:NamedIndividual ;
-        dcatnoinfo:hasProperty       digdir:postboksnummer , digdir:postboksanleggsNavn , digdir:poststed ;
+        dcatnoinfo:hasProperty       digdir:postboksnummer , digdir:postboksanleggsNavn , digdir:poststedPostboksadresse ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      digdir:GeografiskAdresse ;
         dcatnoinfo:name              "Postboksadresse"@nb ;
@@ -139,7 +139,7 @@ digdir:Matrikkeladresse  a          dcatnoinfo:ModelElement , owl:NamedIndividua
         dcatnoinfo:belongsToModule   "Adresse"@nb .
 
 digdir:Vegadresse  a                dcatnoinfo:ModelElement , owl:NamedIndividual ;
-        dcatnoinfo:hasProperty       digdir:bruksenhetsnummer , digdir:adressenavn , digdir:adressenummer , digdir:poststed , digdir:adressekode , digdir:adressetilleggsnavn , digdir:kommunenummer ;
+        dcatnoinfo:hasProperty       digdir:bruksenhetsnummer , digdir:adressenavn , digdir:adressenummer , digdir:poststedVegadresse , digdir:adressekode , digdir:adressetilleggsnavn , digdir:kommunenummer ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      digdir:OffisiellAdresse ;
         dcatnoinfo:name              "Vegadresse"@nb ;
@@ -370,7 +370,13 @@ digdir:etternavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
         xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
 
-digdir:adresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
+digdir:enhetsadresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          digdir:GeografiskAdresse ;
+        dcatnoinfo:propertyType  "rolle"^^xsd:string ;
+        dcatnoinfo:name          "adresse"@nb ;
+        xsd:minOccurs            "0"^^xsd:nonNegativeInteger .
+
+digdir:personadresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
         dcatnoinfo:type          digdir:GeografiskAdresse ;
         dcatnoinfo:propertyType  "rolle"^^xsd:string ;
         dcatnoinfo:name          "adresse"@nb ;
@@ -468,7 +474,7 @@ digdir:postboksanleggsNavn
         dcatnoinfo:type          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
-digdir:poststed  a              dcatnoinfo:Property , owl:NamedIndividual ;
+digdir:poststedPostboksadresse  a              dcatnoinfo:Property , owl:NamedIndividual ;
         dcatnoinfo:name          "poststed"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
         dcatnoinfo:type          digdir:Poststed ;
@@ -519,7 +525,7 @@ digdir:adressenummer
         dcatnoinfo:type          digdir:Adressenummer ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
-digdir:poststed
+digdir:poststedVegadresse
         a                        dcatnoinfo:Property , owl:NamedIndividual ;
         dcatnoinfo:name          "poststed"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
