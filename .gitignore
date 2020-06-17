@@ -10,6 +10,7 @@
 
 # IntelliJ IDEA
 .idea
+*.iml
 
 # Python
 __pycache__/
