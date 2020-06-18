@@ -17,7 +17,7 @@ digdir:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividua
         dcatnoinfo:name         "Felles informasjonsmodell for Person og Enhet"@nb ;
         dcatnoinfo:version      "1.0"^^xsd:string ;
         dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
-        dct:language            "nb"^^xsd:string ;
+        dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
         dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse. Felles forståelse av begreper og informasjon om person og enhet. Standardisert struktur for konsistent bruk og representasjon av informasjon om personer og enheter på tvers av virksomheter og løsninger."@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
@@ -37,7 +37,7 @@ digdir:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedIndi
         dct:description         "Overordnet informasjonsmodell for Adresse."@nb ;
         dcatnoinfo:version      "1.0"^^xsd:string ;
         dct:issued              "2016-09-28T00:00:00+01:00"^^xsd:dateTime ;
-        dct:language            "nb"^^xsd:string ;
+        dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             "Fullført"^^xsd:string ;
         dcat:contactPoint       digdir:KontaktOss ;
