@@ -102,7 +102,7 @@ digdir:Identifikator  a              dcatnoinfo:ModelElement , owl:NamedIndividu
 digdir:Kontaktinformasjon
         a                            dcatnoinfo:ModelElement , owl:NamedIndividual ;
         dcatnoinfo:hasProperty       digdir:mobiltelefonnummer , digdir:telefonnummer , digdir:epostadresse ;
-        dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.digdir.no/api/concepts/b7b85dc1-ae8c-488f-956b-76a8e9f84495"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy     "https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/94328aca-770b-4502-95e5-94e44cb6d62f"^^xsd:anyURI ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:name              "Kontaktinformasjon"@nb ;
         dcatnoinfo:belongsToModule   "Aktør"@nb .
@@ -228,6 +228,7 @@ digdir:Landkode  a                   dcatnoinfo:CodeList , owl:NamedIndividual ;
         dcatnoinfo:name              "Landkode"@nb .
 
 digdir:Kommunenummer  a             dcatnoinfo:CodeList , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy "https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/399c275c-764c-402b-b49c-ae95392bd6fc"^^xsd:anyURI ;
         dcatnoinfo:codeListReference "https://www.ssb.no/klass/klassifikasjoner/131"^^xsd:anyURI ;
         dcatnoinfo:modelElementType  "kodeliste"^^xsd:string ;
         dcatnoinfo:name              "Kommunenummer"@nb .
@@ -344,6 +345,7 @@ digdir:organisasjonsform
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:næringskode  a            dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy "https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/f4e7cdd1-dcb0-400e-9a7b-e863010bb8ab"^^xsd:anyURI ;
         dcatnoinfo:name          "næringskode"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
         dcatnoinfo:type          digdir:Tekst .
@@ -431,21 +433,21 @@ digdir:gyldighetsperiode
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:epostadresse  a           dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy "https://fellesdatakatalog.digdir.no/api/concepts/6fb2f9a3-3e27-410b-8e1d-2d3d471d14b7"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy "https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/59855368-a391-4640-a78b-a71d4065185e"^^xsd:anyURI ;
         dcatnoinfo:name          "epostadresse"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
         dcatnoinfo:type          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:telefonnummer  a          dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy "https://fellesdatakatalog.digdir.no/api/concepts/e186c93b-1368-4955-a7cd-9036f213a886"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy "https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/15ff04ea-2690-4fa1-b364-5a1e8895faf5"^^xsd:anyURI ;
         dcatnoinfo:name          "telefonnummer"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
         dcatnoinfo:type          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:mobiltelefonnummer a      dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy "https://fellesdatakatalog.digdir.no/api/concepts/af4b2af3-64bd-42ba-967e-01cb8ef01c52"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy "https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/8f72464c-f40f-4cee-8da9-72d407901838"^^xsd:anyURI ;
         dcatnoinfo:name          "mobiltelefonnummer"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
         dcatnoinfo:type          digdir:Tekst ;
