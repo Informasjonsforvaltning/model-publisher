@@ -1,22 +1,21 @@
-name: Build and deploy to staging when pull request is created
+name: Deploy to staging
 
 on:
-  pull_request:
+  push:
     branches:
       - master
 
 jobs:
   build-and-deploy:
-    name: Deploy to staging environment
+    name: Deploy to staging environment when push to master
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
-      # Setup gcloud CLI
-      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      - name: Setup gcloud CLI
+        uses: google-github-actions/setup-gcloud@master
         with:
-          version: '270.0.0'
           service_account_email: ${{ secrets.GCP_SA_DIGDIR_FDK_GCR_EMAIL }}
           service_account_key: ${{ secrets.GCP_SA_DIGDIR_FDK_GCR_KEY }}
 
@@ -30,16 +29,12 @@ jobs:
         run: docker -- push eu.gcr.io/digdir-fdk-infra/model-publisher
 
       - name: Apply Helm template
-        uses: stefanprodan/kube-tools@v1
-        with:
-          helm: 2.14.3
-          command: |
-            helm init --client-only
-            helm repo add fdk https://informasjonsforvaltning.github.io/helm-chart/
-            helm fetch --untar --untardir ./helm fdk/model-publisher
-            helm template --set DOCKER_IMAGE_NAME="eu.gcr.io/digdir-fdk-infra/model-publisher:$GITHUB_SHA" -f ./helm/model-publisher/values/staging.yaml ./helm/model-publisher/ > ./kubectlapply.yaml
-            chmod o+w ./kubectlapply.yaml
-            cat kubectlapply.yaml
+        run: |
+          helm repo add fdk https://informasjonsforvaltning.github.io/helm-chart/
+          helm fetch --untar --untardir ./helm fdk/model-publisher
+          helm template --set DOCKER_IMAGE_NAME="eu.gcr.io/digdir-fdk-infra/model-publisher:$GITHUB_SHA" -f ./helm/model-publisher/values/staging.yaml ./helm/model-publisher/ > ./kubectlapply.yaml
+          chmod o+w ./kubectlapply.yaml
+          cat kubectlapply.yaml
 
       - name: Get kubeconfig file from GKE
         uses: machine-learning-apps/gke-kubeconfig@master
@@ -56,9 +51,15 @@ jobs:
         with:
           args: "apply -f ./kubectlapply.yaml --force"
 
-      - name: Notify slack of deploy
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: pullreminders/slack-action@master
+      - name: Notify slack
+        uses: 8398a7/action-slack@v3
         with:
-          args: '{\"channel\":\"C7NTH118T\",\"text\":\"Application model-publisher deployed to staging\"}'
+          mention: 'channel'
+          if_mention: failure
+          status: ${{ job.status }}
+          author_name: 'Application: model-publisher | Environment: staging'
+          fields: commit,author,workflow,message
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        if: always()
