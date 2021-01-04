@@ -27,7 +27,7 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel , owl:NamedIndivid
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             <http://purl.org/adms/status/Completed> ;
-        dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
+        dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Person"@nb , "Person"@en, "Person"@nn , "Enhet"@nb , "Eining"@nn ,"Legal entity"@en , "Adresse"@nb , "Adresse"@nn, "Address"@en ;
         foaf:homepage           <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
@@ -46,7 +46,7 @@ digdir:AdresseModell  a              modelldcatno:InformationModel , owl:NamedIn
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             <http://purl.org/adms/status/Completed> ;
-        dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
+        dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Adresse"@nb ;
         foaf:homepage           <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> ;
