@@ -526,23 +526,27 @@ digdir:Kvinne  a         owl:NamedIndividual , modelldcatno:CodeElement ;
         skos:inScheme   digdir:Kjønn ;
         skos:topConceptOf digdir:Kjønn ;
         xkos:next         digdir:Mann ;
+        skos:prefLabel "kvinne"@nb ;
         skos:notation  "kvinne"^^xsd:string .
 
 digdir:Mann  a           owl:NamedIndividual , modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Mann"^^xsd:string ;
         skos:inScheme   digdir:Kjønn ;
         xkos:next       digdir:Ubestemt ;
+        skos:prefLabel "mann"@nb ;
         skos:notation  "mann"^^xsd:string .
 
 digdir:Ubestemt  a       owl:NamedIndividual , modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ubestemt"^^xsd:string ;
         skos:inScheme   digdir:Kjønn ;
         xkos:next       digdir:Ukjent ;
+        skos:prefLabel "ubestemt"@nb ;
         skos:notation  "ubestemt"^^xsd:string .
 
 digdir:Ukjent  a         owl:NamedIndividual , modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ukjent"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
+        skos:prefLabel "ukjent"@nb ;
         skos:notation  "ukjent"^^xsd:string .
 
 digdir:Ugift  a          owl:NamedIndividual , modelldcatno:CodeElement ;
@@ -550,12 +554,14 @@ digdir:Ugift  a          owl:NamedIndividual , modelldcatno:CodeElement ;
         skos:inScheme   digdir:Sivilstand ;
         xkos:next       digdir:Gift ;
         skos:topConceptOf digdir:Sivilstand ;
+        skos:prefLabel "ugift"@nb ;
         skos:notation  "ugift"^^xsd:string .
 
 digdir:Gift  a           owl:NamedIndividual , modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Gift"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
         xkos:next       digdir:EnkeEllerEnkemann ;
+        skos:prefLabel "gift"@nb ;
         skos:notation "gift"^^xsd:string .
 
 digdir:EnkeEllerEnkemann
@@ -563,18 +569,21 @@ digdir:EnkeEllerEnkemann
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#EnkeEllerEnkemann"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
         xkos:next       digdir:Separert ;
+        skos:prefLabel "enke eller enkemann"@nb ;
         skos:notation  "enkeEllerEnkemann"^^xsd:string .
 
 digdir:Skilt  a          owl:NamedIndividual , modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Skilt"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
         xkos:next       digdir:RegistrertPartner ;
+        skos:prefLabel "skilt"@nb ;
         skos:notation  "skilt"^^xsd:string .
 
 digdir:Separert  a       owl:NamedIndividual , modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Separert"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
         xkos:next       digdir:Skilt ;
+        skos:prefLabel "separert"@nb ;
         skos:notation  "separert"^^xsd:string .
 
 digdir:RegistrertPartner
@@ -582,6 +591,7 @@ digdir:RegistrertPartner
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#RegistrertPartner"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
         xkos:next       digdir:SeparertPartner ;
+        skos:prefLabel "registrert partner"@nb ;
         skos:notation  "registrertPartner"^^xsd:string .
 
 digdir:SeparertPartner
@@ -589,12 +599,14 @@ digdir:SeparertPartner
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#SeparertPartner"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
         xkos:next       digdir:SkiltPartner ;
+        skos:prefLabel "separert partner"@nb ;
         skos:notation "separertPartner"^^xsd:string .
 
 digdir:SkiltPartner  a   owl:NamedIndividual , modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#SkiltPartner"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
         xkos:next       digdir:GjenlevendePartner ;
+        skos:prefLabel "skilt partner"@nb ;
         skos:notation  "skiltPartner"^^xsd:string .
 
 digdir:GjenlevendePartner
@@ -602,11 +614,13 @@ digdir:GjenlevendePartner
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#GjenlevendePartner"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
         xkos:next       digdir:Uoppgitt ;
+        skos:prefLabel "gjenlevende partner"@nb ;
         skos:notation "gjenlevendePartner"^^xsd:string .
 
 digdir:Uoppgitt  a       owl:NamedIndividual , modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Uoppgitt"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
+        skos:prefLabel "uoppgitt"@nb ;
         skos:notation  "uoppgitt"^^xsd:string .
 
 digdir:enhetSpesialiserer a       owl:NamedIndividual , modelldcatno:Specialization ;
