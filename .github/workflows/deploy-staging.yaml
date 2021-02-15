@@ -22,7 +22,7 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_DIGDIR_FDK_GCR_KEY }}
 
       - name: Configure docker to use the gcloud command-line tool as a credential helper
-      - run: gcloud auth configure-docker eu.gcr.io
+        run: gcloud auth configure-docker eu.gcr.io
 
       - name: Build Docker image with GitHub commit sha tag and staging tag
         run: docker build . -t eu.gcr.io/digdir-fdk-infra/model-publisher:$GITHUB_SHA -t eu.gcr.io/digdir-fdk-infra/model-publisher:staging_latest
