@@ -1,14 +1,16 @@
 name: Deploy to staging
 
 on:
-  push:
+  pull_request:
+    types: [ready_for_review, opened, reopened, synchronize]
     branches:
       - master
 
 jobs:
   build-and-deploy:
-    name: Deploy to staging environment when push to master
+    name: Build and deploy to staging environment when pull request is created
     runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
 
     steps:
       - uses: actions/checkout@v2
@@ -19,14 +21,14 @@ jobs:
           service_account_email: ${{ secrets.GCP_SA_DIGDIR_FDK_GCR_EMAIL }}
           service_account_key: ${{ secrets.GCP_SA_DIGDIR_FDK_GCR_KEY }}
 
-      # Configure docker to use the gcloud command-line tool as a credential helper
-      - run: gcloud auth configure-docker
+      - name: Configure docker to use the gcloud command-line tool as a credential helper
+      - run: gcloud auth configure-docker eu.gcr.io
 
       - name: Build Docker image with GitHub commit sha tag and staging tag
         run: docker build . -t eu.gcr.io/digdir-fdk-infra/model-publisher:$GITHUB_SHA -t eu.gcr.io/digdir-fdk-infra/model-publisher:staging_latest
 
       - name: Publish docker image to Google Cloud
-        run: docker -- push eu.gcr.io/digdir-fdk-infra/model-publisher
+        run: docker -- push eu.gcr.io/digdir-fdk-infra/model-publisher -a
 
       - name: Apply Helm template
         run: |
