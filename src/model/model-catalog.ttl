@@ -289,7 +289,7 @@ digdir:næringskode  a            modelldcatno:Attribute , owl:NamedIndividual ;
         dct:subject     <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/f4e7cdd1-dcb0-400e-9a7b-e863010bb8ab> ;
         dct:title                  "næringskode"@nb ;
         modelldcatno:sequenceNumber "4"^^xsd:positiveInteger ;
-        xsd:minOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "0"^^xsd:nonNegativeInteger ;
         modelldcatno:hasSimpleType         digdir:Tekst .
 
 digdir:fornavn  a                 modelldcatno:Attribute , owl:NamedIndividual ;
