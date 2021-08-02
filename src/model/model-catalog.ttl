@@ -148,14 +148,11 @@ digdir:OrganisasjonsnummerType
         a                            modelldcatno:SimpleType , owl:NamedIndividual ;
         dct:subject     <http://data.brreg.no/begrep/28155> ;
         dct:title                      "Organisasjonsnummer"@nb ;
-        modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
-        xsd:length                   "9"^^xsd:nonNegativeInteger ;
-        xsd:pattern                  "[0-9]+"^^xsd:string .
+        modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI .
 
 digdir:Tekst  a                      modelldcatno:SimpleType , owl:NamedIndividual ;
         dct:title                      "Tekst"@nb ;
-        modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
-        xsd:maxLength                "100"^^xsd:nonNegativeInteger .
+        modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI .
 
 digdir:Heltall  a                   modelldcatno:SimpleType , owl:NamedIndividual ;
         dct:title                     "Heltall"@nb ;
@@ -270,24 +267,29 @@ digdir:organisasjonsnummer
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:subject <http://data.brreg.no/begrep/28155> ;
         dct:title          "organisasjonsnummer"@nb ;
+        modelldcatno:sequenceNumber "1"^^xsd:positiveInteger ;
         modelldcatno:hasSimpleType   digdir:OrganisasjonsnummerType ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:enhetsnavn
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
-        dct:title                  "enhetsnavn"@nb ;
+        dct:title                  "navn"@nb ;
+        modelldcatno:sequenceNumber "2"^^xsd:positiveInteger ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:organisasjonsform
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "organisasjonsform"@nb ;
+        modelldcatno:sequenceNumber "3"^^xsd:positiveInteger ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:næringskode  a            modelldcatno:Attribute , owl:NamedIndividual ;
         dct:subject     <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/f4e7cdd1-dcb0-400e-9a7b-e863010bb8ab> ;
         dct:title                  "næringskode"@nb ;
+        modelldcatno:sequenceNumber "4"^^xsd:positiveInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger ;
         modelldcatno:hasSimpleType         digdir:Tekst .
 
 digdir:fornavn  a                 modelldcatno:Attribute , owl:NamedIndividual ;
@@ -339,29 +341,34 @@ digdir:identifikatorverdi
         a                        owl:NamedIndividual , modelldcatno:Attribute ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         dct:title          "identifikatorverdi"@nb ;
+        modelldcatno:sequenceNumber "1"^^xsd:positiveInteger ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
         xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:identifikatortype
         a                        owl:NamedIndividual , modelldcatno:Attribute ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
+        modelldcatno:sequenceNumber "2"^^xsd:positiveInteger ;
         dct:title          "identifikatortype"@nb ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:utstedtDato  a            owl:NamedIndividual , modelldcatno:Attribute ;
         modelldcatno:hasSimpleType          digdir:Dato ;
         dct:title          "utstedtDato"@nb ;
+        modelldcatno:sequenceNumber "3"^^xsd:positiveInteger ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:utstedtAvAutoritet
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "utstedtAvAutoritet"@nb ;
+        modelldcatno:sequenceNumber "4"^^xsd:positiveInteger ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:gyldighetsperiode
         a                        modelldcatno:Role , owl:NamedIndividual ;
         dct:title          "gyldighetsperiode"@nb ;
+        modelldcatno:sequenceNumber "5"^^xsd:positiveInteger ;
         modelldcatno:hasDataType          digdir:Periode ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
