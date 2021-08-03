@@ -71,11 +71,13 @@ digdir:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
 digdir:Aktør  a                      owl:NamedIndividual , modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:identifikator , digdir:kontaktinformasjon ;
         dct:title                      "Aktør"@nb ;
+        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/20febfaa-9467-48ea-9219-8ea611321f22> ;
         modelldcatno:belongsToModule   "Aktør"@nb .
 
 digdir:Person  a                     owl:NamedIndividual , modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:fulltNavn , digdir:fødselsdato , digdir:navn , digdir:kjønn , digdir:dødssted , digdir:dødsdato , digdir:statsborgerskap , digdir:sivilstand , digdir:fødested , digdir:fødeland , digdir:dødsland , digdir:opprinneligNavn , digdir:personadresse , digdir:personSpesialiserer ;
-        dct:title                     "Person"@nb .
+        dct:title                     "Person"@nb ;
+        dct:subject                   <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/6c1197a7-5c17-48f6-b399-a031d66cd8da> .
 
 digdir:Enhet  a                      owl:NamedIndividual , modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:organisasjonsnummer , digdir:enhetsnavn , digdir:organisasjonsform , digdir:næringskode , digdir:enhetSpesialiserer , digdir:enhetsadresse ;
@@ -83,7 +85,8 @@ digdir:Enhet  a                      owl:NamedIndividual , modelldcatno:ObjectTy
 
 digdir:Identifikator  a              modelldcatno:ObjectType , owl:NamedIndividual ;
         modelldcatno:hasProperty       digdir:gyldighetsperiode , digdir:utstedtAvAutoritet , digdir:utstedtDato , digdir:identifikatortype , digdir:identifikatorverdi ;
-        dct:title                       "Identifikator"@nb .
+        dct:title                       "Identifikator"@nb ;
+        dct:subject                     <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/f34cf23b-abfc-4413-8d46-afd175e1c872> .
 
 digdir:Kontaktinformasjon  a          modelldcatno:ObjectType , owl:NamedIndividual ;
         modelldcatno:hasProperty      digdir:mobiltelefonnummer , digdir:telefonnummer , digdir:epostadresse ;
@@ -93,31 +96,37 @@ digdir:Kontaktinformasjon  a          modelldcatno:ObjectType , owl:NamedIndivid
 
 digdir:Adresse  a                   modelldcatno:ObjectType , owl:NamedIndividual ;
         dct:title                      "Adresse"@nb ;
+        dct:subject                 <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/fea0e9f2-3b62-4c6b-9df3-27dd2f7cd530> ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:GeografiskAdresse  a         modelldcatno:ObjectType , owl:NamedIndividual ;
         modelldcatno:hasProperty       digdir:geografiskAdresseSpesialiserer ;
+        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> ;
         dct:title                      "GeografiskAdresse"@nb ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:OffisiellAdresse  a         modelldcatno:ObjectType , owl:NamedIndividual ;
         modelldcatno:hasProperty       digdir:adresseId , digdir:representasjonspunkt , digdir:offisiellAdresseSpesialiserer ;
         dct:title                      "OffisiellAdresse"@nb ;
+        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/0be32f31-fed4-4b07-ac1d-1892c86e8aa9> ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:Postboksadresse  a           modelldcatno:ObjectType , owl:NamedIndividual ;
         modelldcatno:hasProperty       digdir:postboksnummer , digdir:postboksanleggsNavn , digdir:poststedPostboksadresse , digdir:postboksadresseSpesialiserer ;
         dct:title                      "Postboksadresse"@nb ;
+        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/fdcb929f-cb81-46d6-b419-b6ac520ed065> ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:Matrikkeladresse  a          modelldcatno:ObjectType , owl:NamedIndividual ;
         modelldcatno:hasProperty       digdir:bruksenhetsnummer , digdir:adressetilleggsnavn , digdir:matrikkelnummer , digdir:undernummer , digdir:matrikkeladresseSpesialiserer ;
         dct:title                      "Matrikkeladresse"@nb ;
+        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/f6d85b38-f7e3-4764-8e51-9627ccd72569> ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:Vegadresse  a                modelldcatno:ObjectType , owl:NamedIndividual ;
         modelldcatno:hasProperty       digdir:bruksenhetsnummer , digdir:adressenavn , digdir:adressenummer , digdir:poststedVegadresse , digdir:adressekode , digdir:adressetilleggsnavn , digdir:kommunenummer , digdir:vegadresseSpesialiserer ;
         dct:title                      "Vegadresse"@nb ;
+        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/6c87006e-2bae-4424-9523-48d4cf4cc9bf> ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:Personnavn  a                 owl:NamedIndividual , modelldcatno:DataType ;
@@ -130,11 +139,13 @@ digdir:Periode  a                 owl:NamedIndividual , modelldcatno:DataType ;
 
 digdir:Punkt  a                     owl:NamedIndividual , modelldcatno:DataType ;
         modelldcatno:hasProperty       digdir:koordinat , digdir:referansesystem ;
-        dct:title                      "Punkt"@nb .
+        dct:title                      "Punkt"@nb ;
+        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/0bb21922-0379-4324-b91b-d2389a777dc6> .
 
 digdir:Poststed  a                  owl:NamedIndividual , modelldcatno:DataType ;
         modelldcatno:hasProperty       digdir:poststedsnavn , digdir:postnummer ;
-        dct:title                      "Poststed"@nb .
+        dct:title                      "Poststed"@nb ;
+        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/4141472d-e770-4e4a-a85e-d12d9eb05a43> .
 
 digdir:Adressenummer  a             owl:NamedIndividual , modelldcatno:DataType ;
         modelldcatno:hasProperty       digdir:nummer , digdir:bokstav ;
@@ -392,23 +403,27 @@ digdir:mobiltelefonnummer a      modelldcatno:Attribute , owl:NamedIndividual ;
 
 digdir:adresseId  a     modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "adresseId"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/d1574346-8712-431b-b811-38ce2204adf5> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:representasjonspunkt
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
-        dct:title          "representasjonspunkt"@nb ;
+        dct:title                "representasjonspunkt"@nb ;
+        dct:subject              <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/da56081e-d08e-4c2c-859a-aa1ebb31d738> ;
         modelldcatno:hasDataType          digdir:Punkt ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:postboksnummer  a         modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "postboksnummer"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/d08863bd-5b92-4697-bc9a-75c7479124bf> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:postboksanleggsNavn
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "postboksanleggsNavn"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/1e9d4ebe-89c8-46fb-af23-af7b13a20b40> ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
@@ -419,33 +434,39 @@ digdir:poststedPostboksadresse  a              modelldcatno:Attribute , owl:Name
 
 digdir:bruksenhetsnummer  a     modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "bruksenhetsnummer"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/b19e31e0-3b1a-4cf1-9f56-25ce1afac64a> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:adressetilleggsnavn  a   modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "adressetilleggsnavn"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/5732b7dd-086f-4210-a122-f4f0a80b0381> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:matrikkelnummer  a       modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "matrikkelnummer"@nb ;
+        dct:subject         <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/ae049afc-dd7e-436b-8bff-b3ab5f0ec986> ;
         modelldcatno:hasDataType          digdir:Matrikkelnummer ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:undernummer  a           modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "undernummer"@nb ;
+        dct:subject         <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/c9b91045-5180-461c-8882-1badab9f60f9> ;
         modelldcatno:hasSimpleType         digdir:Heltall ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:adressenavn
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "adressenavn"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/52c28953-af85-477f-b612-a10e76f977c4> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:adressenummer
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "adressenummer"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/5bc2a8b8-4dca-471c-9b42-b987f8a8cad1> ;
         modelldcatno:hasDataType          digdir:Adressenummer ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
@@ -459,6 +480,7 @@ digdir:poststedVegadresse
 digdir:adressekode
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "adressekode"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/e58fc49e-2261-4ef7-9f84-315086dfb10e> ;
         modelldcatno:hasSimpleType       digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
@@ -471,11 +493,13 @@ digdir:kommunenummer
 
 digdir:poststedsnavn  a         modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "poststedsnavn"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/0cef6962-f4d9-4508-b6c7-90c9041a73c1> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:postnummer  a            modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "postnummer"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/2074ce7b-e943-4b63-93ae-99a7a518e97f> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
@@ -494,6 +518,7 @@ digdir:referansesystem  a       modelldcatno:Attribute , owl:NamedIndividual ;
 digdir:nummer
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "nummer"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/1e5eb1e7-46c2-45c3-a144-32baca22e7f3> ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
         xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
@@ -501,18 +526,21 @@ digdir:nummer
 digdir:bokstav
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "bokstav"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/17982e51-b601-46c3-b396-9a3daa564a19> ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:gårdsnummer
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "gårdsnummer"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/e5bdc592-be9a-4342-aa8a-bf39aaef19b2> ;
         modelldcatno:hasSimpleType          digdir:Heltall ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:bruksnummer
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "bruksnummer"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/b35111d1-cad4-4b66-acf8-c32c72f8033c> ;
         modelldcatno:hasSimpleType          digdir:Heltall ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
@@ -525,6 +553,7 @@ digdir:festenummer
 digdir:seksjonsnummer
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "seksjonsnummer"@nb ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/0289aa6a-9dc6-4a31-b283-5871ab0ed02c> ;
         modelldcatno:hasSimpleType          digdir:Heltall ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
