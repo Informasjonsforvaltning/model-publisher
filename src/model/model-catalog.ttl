@@ -32,7 +32,7 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Person"@nb , "Person"@en, "Person"@nn , "Enhet"@nb , "Eining"@nn ,"Legal entity"@en , "Adresse"@nb , "Adresse"@nn, "Address"@en ;
-        foaf:homepage           <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
+        foaf:homepage           <https://www.digdir.no/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet/2018> ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
         dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/naringsliv> .
 
@@ -53,7 +53,7 @@ digdir:AdresseModell  a              modelldcatno:InformationModel ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Adresse"@nb ;
-        foaf:homepage           <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> ;
+        foaf:homepage           <https://www.digdir.no/informasjonsforvaltning/adresse-felles-informasjonsmodell/2019> ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
         dcat:theme              <https://psi.norge.no/los/tema/eiendom> .
 
