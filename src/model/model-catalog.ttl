@@ -586,81 +586,91 @@ digdir:Ubestemt  a       modelldcatno:CodeElement ;
 digdir:Ukjent  a         modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ukjent"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
-        skos:prefLabel "ukjent"@nb ;
+        skos:prefLabel "sivilstand ukjent"@nb ;
         skos:notation  "ukjent"^^xsd:string .
 
-digdir:Ugift  a          modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ugift"^^xsd:string ;
-        skos:inScheme   digdir:Sivilstand ;
-        xkos:next       digdir:Gift ;
+digdir:Ugift  a             modelldcatno:CodeElement ;
+        dct:identifier    "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ugift"^^xsd:string ;
+        skos:inScheme     digdir:Sivilstand ;
+        dct:subject       <http://begrepskatalogen/begrep/92f82e89-fb04-11e9-92b0-005056828ed3> ;
+        xkos:next         digdir:Gift ;
         skos:topConceptOf digdir:Sivilstand ;
-        skos:prefLabel "ugift"@nb ;
-        skos:notation  "ugift"^^xsd:string .
+        skos:prefLabel    "sivilstand ugift"@nb ;
+        skos:notation     "ugift"^^xsd:string .
 
 digdir:Gift  a           modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Gift"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
+        dct:subject     <http://begrepskatalogen/begrep/92f82e8a-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:EnkeEllerEnkemann ;
-        skos:prefLabel "gift"@nb ;
-        skos:notation "gift"^^xsd:string .
+        skos:prefLabel  "sivilstand gift"@nb ;
+        skos:notation   "gift"^^xsd:string .
 
 digdir:EnkeEllerEnkemann
         a                modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#EnkeEllerEnkemann"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
+        dct:subject     <http://begrepskatalogen/begrep/92f82e8b-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:Separert ;
-        skos:prefLabel "enke eller enkemann"@nb ;
+        skos:prefLabel "sivilstand enke eller enkemann"@nb ;
         skos:notation  "enkeEllerEnkemann"^^xsd:string .
 
 digdir:Skilt  a          modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Skilt"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
+        dct:subject     <http://begrepskatalogen/begrep/92f82e8c-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:RegistrertPartner ;
-        skos:prefLabel "skilt"@nb ;
+        skos:prefLabel "sivilstand skilt"@nb ;
         skos:notation  "skilt"^^xsd:string .
 
 digdir:Separert  a       modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Separert"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
+        dct:subject     <http://begrepskatalogen/begrep/92f82e8d-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:Skilt ;
-        skos:prefLabel "separert"@nb ;
+        skos:prefLabel "sivilstand separert"@nb ;
         skos:notation  "separert"^^xsd:string .
 
 digdir:RegistrertPartner
         a                modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#RegistrertPartner"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
+        dct:subject     <http://begrepskatalogen/begrep/92f82e8e-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:SeparertPartner ;
-        skos:prefLabel "registrert partner"@nb ;
+        skos:prefLabel "sivilstand registrert partner"@nb ;
         skos:notation  "registrertPartner"^^xsd:string .
 
 digdir:SeparertPartner
         a                modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#SeparertPartner"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
+        dct:subject     <http://begrepskatalogen/begrep/92f82e8f-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:SkiltPartner ;
-        skos:prefLabel "separert partner"@nb ;
+        skos:prefLabel "sivilstand separert partner"@nb ;
         skos:notation "separertPartner"^^xsd:string .
 
 digdir:SkiltPartner  a   modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#SkiltPartner"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
+        dct:subject     <http://begrepskatalogen/begrep/92f82e90-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:GjenlevendePartner ;
-        skos:prefLabel "skilt partner"@nb ;
+        skos:prefLabel "sivilstand skilt partner"@nb ;
         skos:notation  "skiltPartner"^^xsd:string .
 
 digdir:GjenlevendePartner
         a                modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#GjenlevendePartner"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
+        dct:subject     <http://begrepskatalogen/begrep/92f82e91-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:Uoppgitt ;
-        skos:prefLabel "gjenlevende partner"@nb ;
-        skos:notation "gjenlevendePartner"^^xsd:string .
+        skos:prefLabel  "sivilstand gjenlevende partner"@nb ;
+        skos:notation   "gjenlevendePartner"^^xsd:string .
 
 digdir:Uoppgitt  a       modelldcatno:CodeElement ;
         dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Uoppgitt"^^xsd:string ;
         skos:inScheme   digdir:Sivilstand ;
-        skos:prefLabel "uoppgitt"@nb ;
+        dct:subject     <http://begrepskatalogen/begrep/92f82e88-fb04-11e9-92b0-005056828ed3> ;
+        skos:prefLabel "sivilstand uoppgitt"@nb ;
         skos:notation  "uoppgitt"^^xsd:string .
 
 digdir:enhetSpesialiserer a       modelldcatno:Specialization ;
