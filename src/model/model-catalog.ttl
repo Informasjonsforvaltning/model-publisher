@@ -19,7 +19,7 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#PersonOgEnhet"^^xsd:string ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
         dct:temporal            digdir:Tidsintervall ;
-        dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse."@nb ;
+        dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse. Adressedelen av modellen er beskrevet nærmere i Felles informasjonsmodell for Adresse."@nb ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
         owl:versionInfo        "1.0"^^xsd:string ;
         dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
@@ -51,7 +51,7 @@ digdir:AdresseModell  a              modelldcatno:InformationModel ;
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:type                modelldcatno:commonSharedModel , modelldcatno:logicalModel ;
         dct:subject             <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/fea0e9f2-3b62-4c6b-9df3-27dd2f7cd530> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/0be32f31-fed4-4b07-ac1d-1892c86e8aa9> ,
-                                <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/fdcb929f-cb81-46d6-b419-b6ac520ed065> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/f6d85b38-f7e3-4764-8e51-9627ccd72569> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/6c87006e-2bae-4424-9523-48d4cf4cc9bf> , <http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/9acc8b93-ae2f-4464-9a45-7e691d7dd19a> ;
+                                <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/fdcb929f-cb81-46d6-b419-b6ac520ed065> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/f6d85b38-f7e3-4764-8e51-9627ccd72569> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/6c87006e-2bae-4424-9523-48d4cf4cc9bf> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/9acc8b93-ae2f-4464-9a45-7e691d7dd19a> ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Adresse"@nb ;
