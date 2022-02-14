@@ -60,10 +60,10 @@ digdir:AdresseModell  a              modelldcatno:InformationModel ;
         dcat:theme              <https://psi.norge.no/los/tema/eiendom> .
 
 digdir:Katalog  a         dcat:Catalog ;
-        dct:description         "Katalog med oversikt over Digitaliseringsdirektoratets modeller"@nb ;
+        dct:description         "Katalog med oversikt over Digitaliseringsdirektoratets felles informasjonsmodeller"@nb ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
-        dct:title               "Digitaliseringsdirektoratets modellkatalog"@nb ;
+        dct:title               "Digitaliseringsdirektoratets katalog over felles informasjonsmodeller"@nb ;
         dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
         modelldcatno:model      digdir:AdresseModell , digdir:PersonOgEnhet .
 
