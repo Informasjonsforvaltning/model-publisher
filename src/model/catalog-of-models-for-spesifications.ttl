@@ -123,7 +123,7 @@
        <https://data.norge.no/concepts/9d406b71-273f-4631-8f3d-52d61943612b>,
        <https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0>;
    dct:description "Information model for \"Specification for description of services and events (CPSV-AP-NO)\"."@en,
-       "Informasjonsmodell for \"Spesifikasjon for tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO)\"."@en;
+       "Informasjonsmodell for \"Spesifikasjon for tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO)\"."@nb;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-model"^^xsd:anyURI;
    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
@@ -207,4 +207,4 @@
    rdfs:seeAlso <https://informasjonsforvaltning.github.io/xkos-ap-no/#ForenkletModell>;
    .
  
-#### End of the file, 2022-02-14 11:43:41
+#### End of the file, 2022-02-14 11:49:44
