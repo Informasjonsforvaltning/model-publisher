@@ -63,7 +63,7 @@
    dct:title """Information model for DQV-AP-NO"""@en,
        """Informasjonsmodell for DQV-AP-NO"""@nb;
    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:description """Information modell for "DQV-AP-NO (Norwegian application profile of DQV)"."""@en,
+   dct:description """Information model for "DQV-AP-NO (Norwegian application profile of DQV)"."""@en,
        """Informasjonsmodell for "DQV-AP-NO (Norsk applikasjonsprofil av DQV)"."""@nb;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-model"^^xsd:anyURI;
    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
@@ -81,7 +81,7 @@
    dct:title """Information model for ModellDCAT-AP-NO"""@en,
        """Informasjonsmodell for ModellDCAT-AP-NO"""@nb;
    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:description """Information modell for "Specification for description of information models (ModellDCAT-AP-NO)"."""@en,
+   dct:description """Information model for "Specification for description of information models (ModellDCAT-AP-NO)"."""@en,
        """Informasjonsmodell for "Spesifikasjon for beskrivelse av informasjonsmodeller (ModellDCAT-AP-NO)"."""@nb;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-model"^^xsd:anyURI;
    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
@@ -207,4 +207,4 @@
    rdfs:seeAlso <https://informasjonsforvaltning.github.io/xkos-ap-no/#ForenkletModell>;
    .
  
-#### End of the file, 2022-02-14 10:38:43
+#### End of the file, 2022-02-14 11:07:10
