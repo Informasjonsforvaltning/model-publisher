@@ -68,7 +68,7 @@ digdir:Katalog  a         dcat:Catalog ;
         modelldcatno:model      digdir:AdresseModell , digdir:PersonOgEnhet .
 
 digdir:Tidsintervall  a    dct:PeriodOfTime ;
-        dcat:startDate  "2016-02-11T00:00:00+01:00"^^xsd:dateTime .
+        dcat:startDate  "2016-11-02T00:00:00+01:00"^^xsd:dateTime .
 
 digdir:KontaktOss  a        vcard:Kind ;
         vcard:hasOrganizationName            "Digitalisation department"@en , "Avdeling for digitalisering"@nn , "Avdeling for digitalisering"@nb ;
