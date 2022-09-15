@@ -89,7 +89,7 @@
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
    dct:issued "2022-08-26"^^xsd:date;
-   owl:versionInfo """1.2""";
+   owl:versionInfo "1.2";
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#concept-descriptions-mdoel>
