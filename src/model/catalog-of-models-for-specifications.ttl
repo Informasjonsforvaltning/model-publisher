@@ -7,6 +7,7 @@
 @prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> . 
 @prefix owl: <http://www.w3.org/2002/07/owl#> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
@@ -24,7 +25,7 @@
    dct:title """Digdir's catalog of information models for various national specifications and standards"""@en,
        """Digdirs katalog over informasjonsmodeller for ulike nasjonale spesifikasjoner og standarder"""@nb;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:modified "2022-09-02"^^xsd:date;
+   dct:modified "2023-03-09"^^xsd:date;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
        <http://publications.europa.eu/resource/authority/language/NOB>;
    .
@@ -89,7 +90,7 @@
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
    dct:issued "2022-08-26"^^xsd:date;
-   owl:versionInfo "1.2";
+   owl:versionInfo """1.2""";
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#concept-descriptions-mdoel>
@@ -154,31 +155,55 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#dcat-ap-no-png>
    rdf:type foaf:Document;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:title """UML diagram with all classes and properties in DCAT-AP-NO"""@en,
+       """UML-diagram over alle klassene og egenskapene i DCAT-AP-NO"""@nb;
+   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+   rdfs:seeAlso <https://data.norge.no/specification/dcat-ap-no/#UML-diagram>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#dqv-ap-no-html>
    rdf:type foaf:Document;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:title """Simplified model for DQV-AP-NO"""@en,
+       """Forenklet modell for DQV-AP-NO"""@nb;
+   dct:format <http://publications.europa.eu/resource/authority/file-type/HTML>;
+   rdfs:seeAlso <https://data.norge.no/specification/dqv-ap-no/#Forenklet_modell_for_DQV-AP-NO>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#modelldcat-ap-no-png>
    rdf:type foaf:Document;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:title """Simplified model for ModellDCAT-AP-NO"""@en,
+       """Forenklet modell for ModellDCAT-AP-NO"""@nb;
+   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+   rdfs:seeAlso <https://data.norge.no/specification/modelldcat-ap-no/#Forenklet-modell>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#concept-descriptions-png>
    rdf:type foaf:Document;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:title """UML model which describes requirements to descriptions of concepts and concept collections"""@en,
+       """UML-modell som beskriver krav til innhold i beskrivelse av begreper og begrepssamlinger"""@nb;
+   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+   rdfs:seeAlso <https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/#vedlegga>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#cpsv-ap-no-png>
    rdf:type foaf:Document;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:title """Simplified model for CPSV-AP-NO"""@en,
+       """Forenklet modell for CPSV-AP-NO"""@nb;
+   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+   rdfs:seeAlso <https://informasjonsforvaltning.github.io/cpsv-ap-no/#Forenklet_modell>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#xkos-ap-no-png>
    rdf:type foaf:Document;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:title """Simplified model for XKOS-AP-NO"""@en,
+       """Forenklet modell for XKOS-AP-NO"""@nb;
+   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+   rdfs:seeAlso <https://informasjonsforvaltning.github.io/xkos-ap-no/#ForenkletModell>;
    .
  
-#### End of the file, 2022-09-02 08:33:45
+#### End of the file, 2023-03-09 08:07:10
