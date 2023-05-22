@@ -16,20 +16,20 @@
 digdir:PersonOgEnhet  a         modelldcatno:InformationModel ;
         modelldcatno:containsModelElement
                 digdir:Aktør , digdir:Enhet , digdir:Person , digdir:Kontaktinformasjon , digdir:Identifikator , digdir:Sivilstand , digdir:Kjønn , digdir:Landkode , digdir:Personnavn , digdir:Periode , digdir:Tekst , digdir:DatoKlokkeslett , digdir:Organisasjonsnummer , digdir:Dato ;
-        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#PersonOgEnhet"^^xsd:string ;
+        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#PersonOgEnhet"^^xsd:anyURI ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
         dct:temporal            digdir:Tidsintervall ;
         dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse. Adressedelen av modellen er beskrevet nærmere i Felles informasjonsmodell for Adresse."@nb ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
-        owl:versionInfo        "1.0"^^xsd:string ;
+        owl:versionInfo        "1.0" ;
         dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
-        owl:versionInfo         "1.0"^^xsd:string ;
+        owl:versionInfo         "1.0" ;
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:type                modelldcatno:commonSharedModel , modelldcatno:logicalModel ;
-        dct:subject             <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/20febfaa-9467-48ea-9219-8ea611321f22> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/6c1197a7-5c17-48f6-b399-a031d66cd8da> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/f34cf23b-abfc-4413-8d46-afd175e1c872> ,
-                                <https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/94328aca-770b-4502-95e5-94e44cb6d62f> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> , <http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0> , <http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0> ;
+        dct:subject             <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/20febfaa-9467-48ea-9219-8ea611321f22> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c1197a7-5c17-48f6-b399-a031d66cd8da> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/f34cf23b-abfc-4413-8d46-afd175e1c872> ,
+                                <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/94328aca-770b-4502-95e5-94e44cb6d62f> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> , <http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0> , <http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0> ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Person"@nb , "Person"@en, "Person"@nn , "Enhet"@nb , "Eining"@nn ,"Legal entity"@en , "Adresse"@nb , "Adresse"@nn, "Address"@en ;
@@ -40,18 +40,18 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel ;
 digdir:AdresseModell  a              modelldcatno:InformationModel ;
         modelldcatno:containsModelElement
                 digdir:Adresse , digdir:GeografiskAdresse , digdir:OffisiellAdresse , digdir:Postboksadresse , digdir:Matrikkeladresse , digdir:Vegadresse , digdir:Kommunenummer , digdir:Poststed , digdir:Punkt , digdir:Matrikkelnummer , digdir:Adressenummer ;
-        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#AdresseModell"^^xsd:string ;
+        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#AdresseModell"^^xsd:anyURI ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
         dct:description         "Overordnet informasjonsmodell for Adresse. Formål: Felles forståelse av adressebegrep og standardiserte informasjonsstrukturer for konsistent bruk og representasjon av adresser."@nb ;
         dct:title               "Felles informasjonsmodell for Adresse"@nb ;
-        owl:versionInfo         "1.0"^^xsd:string ;
+        owl:versionInfo         "1.0" ;
         dct:issued              "2016-09-28T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
-        owl:versionInfo         "1.0"^^xsd:string ;
+        owl:versionInfo         "1.0" ;
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:type                modelldcatno:commonSharedModel , modelldcatno:logicalModel ;
-        dct:subject             <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/fea0e9f2-3b62-4c6b-9df3-27dd2f7cd530> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/0be32f31-fed4-4b07-ac1d-1892c86e8aa9> ,
-                                <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/fdcb929f-cb81-46d6-b419-b6ac520ed065> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/f6d85b38-f7e3-4764-8e51-9627ccd72569> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/6c87006e-2bae-4424-9523-48d4cf4cc9bf> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/9acc8b93-ae2f-4464-9a45-7e691d7dd19a> ;
+        dct:subject             <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/fea0e9f2-3b62-4c6b-9df3-27dd2f7cd530> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/0be32f31-fed4-4b07-ac1d-1892c86e8aa9> ,
+                                <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/fdcb929f-cb81-46d6-b419-b6ac520ed065> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/f6d85b38-f7e3-4764-8e51-9627ccd72569> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/6c87006e-2bae-4424-9523-48d4cf4cc9bf> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/9acc8b93-ae2f-4464-9a45-7e691d7dd19a> ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Adresse"@nb ;
@@ -61,10 +61,11 @@ digdir:AdresseModell  a              modelldcatno:InformationModel ;
 
 digdir:Katalog  a         dcat:Catalog ;
         dct:description         "Katalog med oversikt over Digitaliseringsdirektoratets felles informasjonsmodeller"@nb ;
-        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
+        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:anyURI ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
         dct:title               "Digitaliseringsdirektoratets katalog over felles informasjonsmodeller"@nb ;
         dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
+        dct:modified            "2023-05-22"^^xsd:date ;
         modelldcatno:model      digdir:AdresseModell , digdir:PersonOgEnhet .
 
 digdir:Tidsintervall  a    dct:PeriodOfTime ;
@@ -77,13 +78,13 @@ digdir:KontaktOss  a        vcard:Kind ;
 digdir:Aktør  a                      modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:identifikator , digdir:kontaktinformasjon ;
         dct:title                      "Aktør"@nb ;
-        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/20febfaa-9467-48ea-9219-8ea611321f22> ;
+        dct:subject                    <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/20febfaa-9467-48ea-9219-8ea611321f22> ;
         modelldcatno:belongsToModule   "Aktør"@nb .
 
 digdir:Person  a                     modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:fulltNavn , digdir:fødselsdato , digdir:navn , digdir:kjønn , digdir:dødssted , digdir:dødsdato , digdir:statsborgerskap , digdir:sivilstand , digdir:fødested , digdir:fødeland , digdir:dødsland , digdir:opprinneligNavn , digdir:personadresse , digdir:personSpesialiserer ;
         dct:title                     "Person"@nb ;
-        dct:subject                   <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/6c1197a7-5c17-48f6-b399-a031d66cd8da> .
+        dct:subject                   <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c1197a7-5c17-48f6-b399-a031d66cd8da> .
 
 digdir:Enhet  a                      modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:organisasjonsnummer , digdir:enhetsnavn , digdir:organisasjonsform , digdir:næringskode , digdir:enhetSpesialiserer , digdir:enhetsadresse ;
@@ -92,47 +93,47 @@ digdir:Enhet  a                      modelldcatno:ObjectType ;
 digdir:Identifikator  a              modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:gyldighetsperiode , digdir:utstedtAvAutoritet , digdir:utstedtDato , digdir:identifikatortype , digdir:identifikatorverdi ;
         dct:title                       "Identifikator"@nb ;
-        dct:subject                     <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/f34cf23b-abfc-4413-8d46-afd175e1c872> .
+        dct:subject                     <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/f34cf23b-abfc-4413-8d46-afd175e1c872> .
 
 digdir:Kontaktinformasjon  a          modelldcatno:ObjectType ;
         modelldcatno:hasProperty      digdir:mobiltelefonnummer , digdir:telefonnummer , digdir:epostadresse ;
-        dct:subject         <https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/94328aca-770b-4502-95e5-94e44cb6d62f> ;
+        dct:subject         <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/94328aca-770b-4502-95e5-94e44cb6d62f> ;
         dct:title                      "Kontaktinformasjon"@nb ;
         modelldcatno:belongsToModule   "Aktør"@nb .
 
 digdir:Adresse  a                   modelldcatno:ObjectType ;
         dct:title                      "Adresse"@nb ;
-        dct:subject                 <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/fea0e9f2-3b62-4c6b-9df3-27dd2f7cd530> ;
+        dct:subject                 <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/fea0e9f2-3b62-4c6b-9df3-27dd2f7cd530> ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:GeografiskAdresse  a         modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:geografiskAdresseSpesialiserer ;
-        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> ;
+        dct:subject                    <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> ;
         dct:title                      "GeografiskAdresse"@nb ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:OffisiellAdresse  a         modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:adresseId , digdir:representasjonspunkt , digdir:offisiellAdresseSpesialiserer ;
         dct:title                      "OffisiellAdresse"@nb ;
-        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/0be32f31-fed4-4b07-ac1d-1892c86e8aa9> ;
+        dct:subject                    <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/0be32f31-fed4-4b07-ac1d-1892c86e8aa9> ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:Postboksadresse  a           modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:postboksnummer , digdir:postboksanleggsNavn , digdir:poststedPostboksadresse , digdir:postboksadresseSpesialiserer ;
         dct:title                      "Postboksadresse"@nb ;
-        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/fdcb929f-cb81-46d6-b419-b6ac520ed065> ;
+        dct:subject                    <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/fdcb929f-cb81-46d6-b419-b6ac520ed065> ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:Matrikkeladresse  a          modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:bruksenhetsnummer , digdir:adressetilleggsnavn , digdir:matrikkelnummer , digdir:undernummer , digdir:matrikkeladresseSpesialiserer ;
         dct:title                      "Matrikkeladresse"@nb ;
-        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/f6d85b38-f7e3-4764-8e51-9627ccd72569> ;
+        dct:subject                    <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/f6d85b38-f7e3-4764-8e51-9627ccd72569> ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:Vegadresse  a                modelldcatno:ObjectType ;
         modelldcatno:hasProperty       digdir:bruksenhetsnummer , digdir:adressenavn , digdir:adressenummer , digdir:poststedVegadresse , digdir:adressekode , digdir:adressetilleggsnavn , digdir:kommunenummer , digdir:vegadresseSpesialiserer ;
         dct:title                      "Vegadresse"@nb ;
-        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/6c87006e-2bae-4424-9523-48d4cf4cc9bf> ;
+        dct:subject                    <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/6c87006e-2bae-4424-9523-48d4cf4cc9bf> ;
         modelldcatno:belongsToModule   "Adresse"@nb .
 
 digdir:Personnavn  a                 modelldcatno:DataType ;
@@ -146,12 +147,12 @@ digdir:Periode  a                 modelldcatno:DataType ;
 digdir:Punkt  a                     modelldcatno:DataType ;
         modelldcatno:hasProperty       digdir:koordinat , digdir:referansesystem ;
         dct:title                      "Punkt"@nb ;
-        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/0bb21922-0379-4324-b91b-d2389a777dc6> .
+        dct:subject                    <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/0bb21922-0379-4324-b91b-d2389a777dc6> .
 
 digdir:Poststed  a                  modelldcatno:DataType ;
         modelldcatno:hasProperty       digdir:poststedsnavn , digdir:postnummer ;
         dct:title                      "Poststed"@nb ;
-        dct:subject                    <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/4141472d-e770-4e4a-a85e-d12d9eb05a43> .
+        dct:subject                    <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/4141472d-e770-4e4a-a85e-d12d9eb05a43> .
 
 digdir:Adressenummer  a             modelldcatno:DataType ;
         modelldcatno:hasProperty       digdir:nummer , digdir:bokstav ;
@@ -303,7 +304,7 @@ digdir:organisasjonsform
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:næringskode  a            modelldcatno:Attribute ;
-        dct:subject     <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/f4e7cdd1-dcb0-400e-9a7b-e863010bb8ab> ;
+        dct:subject     <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971526920/f4e7cdd1-dcb0-400e-9a7b-e863010bb8ab> ;
         dct:title                  "næringskode"@nb ;
         modelldcatno:sequenceNumber "4"^^xsd:positiveInteger ;
         xsd:minOccurs            "0"^^xsd:nonNegativeInteger ;
@@ -390,46 +391,46 @@ digdir:gyldighetsperiode
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:epostadresse  a           modelldcatno:Attribute ;
-        dct:subject <https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/59855368-a391-4640-a78b-a71d4065185e> ;
+        dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/59855368-a391-4640-a78b-a71d4065185e> ;
         dct:title          "epostadresse"@nb ;
         modelldcatno:hasSimpleType     digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:telefonnummer  a          modelldcatno:Attribute ;
-        dct:subject <https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/15ff04ea-2690-4fa1-b364-5a1e8895faf5> ;
+        dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/15ff04ea-2690-4fa1-b364-5a1e8895faf5> ;
         dct:title          "telefonnummer"@nb ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:mobiltelefonnummer a      modelldcatno:Attribute ;
-        dct:subject <https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/8f72464c-f40f-4cee-8da9-72d407901838> ;
+        dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/8f72464c-f40f-4cee-8da9-72d407901838> ;
         dct:title          "mobiltelefonnummer"@nb ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:adresseId  a     modelldcatno:Attribute ;
         dct:title          "adresseId"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/d1574346-8712-431b-b811-38ce2204adf5> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/d1574346-8712-431b-b811-38ce2204adf5> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:representasjonspunkt
         a                        modelldcatno:Attribute ;
         dct:title                "representasjonspunkt"@nb ;
-        dct:subject              <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/da56081e-d08e-4c2c-859a-aa1ebb31d738> ;
+        dct:subject              <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/da56081e-d08e-4c2c-859a-aa1ebb31d738> ;
         modelldcatno:hasDataType          digdir:Punkt ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:postboksnummer  a         modelldcatno:Attribute ;
         dct:title          "postboksnummer"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/d08863bd-5b92-4697-bc9a-75c7479124bf> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/d08863bd-5b92-4697-bc9a-75c7479124bf> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:postboksanleggsNavn
         a                        modelldcatno:Attribute ;
         dct:title          "postboksanleggsNavn"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/1e9d4ebe-89c8-46fb-af23-af7b13a20b40> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/1e9d4ebe-89c8-46fb-af23-af7b13a20b40> ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
@@ -440,39 +441,39 @@ digdir:poststedPostboksadresse  a              modelldcatno:Attribute ;
 
 digdir:bruksenhetsnummer  a     modelldcatno:Attribute ;
         dct:title          "bruksenhetsnummer"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/b19e31e0-3b1a-4cf1-9f56-25ce1afac64a> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/b19e31e0-3b1a-4cf1-9f56-25ce1afac64a> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:adressetilleggsnavn  a   modelldcatno:Attribute ;
         dct:title          "adressetilleggsnavn"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/5732b7dd-086f-4210-a122-f4f0a80b0381> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/5732b7dd-086f-4210-a122-f4f0a80b0381> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:matrikkelnummer  a       modelldcatno:Attribute ;
         dct:title          "matrikkelnummer"@nb ;
-        dct:subject         <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/ae049afc-dd7e-436b-8bff-b3ab5f0ec986> ;
+        dct:subject         <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/ae049afc-dd7e-436b-8bff-b3ab5f0ec986> ;
         modelldcatno:hasDataType          digdir:Matrikkelnummer ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:undernummer  a           modelldcatno:Attribute ;
         dct:title          "undernummer"@nb ;
-        dct:subject         <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/c9b91045-5180-461c-8882-1badab9f60f9> ;
+        dct:subject         <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/c9b91045-5180-461c-8882-1badab9f60f9> ;
         modelldcatno:hasSimpleType         digdir:Heltall ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:adressenavn
         a                        modelldcatno:Attribute ;
         dct:title          "adressenavn"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/52c28953-af85-477f-b612-a10e76f977c4> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/52c28953-af85-477f-b612-a10e76f977c4> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:adressenummer
         a                        modelldcatno:Attribute ;
         dct:title          "adressenummer"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/5bc2a8b8-4dca-471c-9b42-b987f8a8cad1> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/5bc2a8b8-4dca-471c-9b42-b987f8a8cad1> ;
         modelldcatno:hasDataType          digdir:Adressenummer ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
@@ -486,26 +487,26 @@ digdir:poststedVegadresse
 digdir:adressekode
         a                        modelldcatno:Attribute ;
         dct:title          "adressekode"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/e58fc49e-2261-4ef7-9f84-315086dfb10e> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/e58fc49e-2261-4ef7-9f84-315086dfb10e> ;
         modelldcatno:hasSimpleType       digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:kommunenummer
         a                        modelldcatno:Attribute ;
-        dct:subject <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/399c275c-764c-402b-b49c-ae95392bd6fc> ;
+        dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971526920/399c275c-764c-402b-b49c-ae95392bd6fc> ;
         dct:title          "kommunenummer"@nb ;
         modelldcatno:hasValueFrom          digdir:Kommunenummer ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:poststedsnavn  a         modelldcatno:Attribute ;
         dct:title          "poststedsnavn"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/0cef6962-f4d9-4508-b6c7-90c9041a73c1> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/0cef6962-f4d9-4508-b6c7-90c9041a73c1> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:postnummer  a            modelldcatno:Attribute ;
         dct:title          "postnummer"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/2074ce7b-e943-4b63-93ae-99a7a518e97f> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/2074ce7b-e943-4b63-93ae-99a7a518e97f> ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
@@ -524,7 +525,7 @@ digdir:referansesystem  a       modelldcatno:Attribute ;
 digdir:nummer
         a                        modelldcatno:Attribute ;
         dct:title          "nummer"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/1e5eb1e7-46c2-45c3-a144-32baca22e7f3> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/1e5eb1e7-46c2-45c3-a144-32baca22e7f3> ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
         xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
@@ -532,21 +533,21 @@ digdir:nummer
 digdir:bokstav
         a                        modelldcatno:Attribute ;
         dct:title          "bokstav"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/17982e51-b601-46c3-b396-9a3daa564a19> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/17982e51-b601-46c3-b396-9a3daa564a19> ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:gårdsnummer
         a                        modelldcatno:Attribute ;
         dct:title          "gårdsnummer"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/e5bdc592-be9a-4342-aa8a-bf39aaef19b2> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/e5bdc592-be9a-4342-aa8a-bf39aaef19b2> ;
         modelldcatno:hasSimpleType          digdir:Heltall ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:bruksnummer
         a                        modelldcatno:Attribute ;
         dct:title          "bruksnummer"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/b35111d1-cad4-4b66-acf8-c32c72f8033c> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/b35111d1-cad4-4b66-acf8-c32c72f8033c> ;
         modelldcatno:hasSimpleType          digdir:Heltall ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
@@ -559,121 +560,121 @@ digdir:festenummer
 digdir:seksjonsnummer
         a                        modelldcatno:Attribute ;
         dct:title          "seksjonsnummer"@nb ;
-        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/0289aa6a-9dc6-4a31-b283-5871ab0ed02c> ;
+        dct:subject        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/0289aa6a-9dc6-4a31-b283-5871ab0ed02c> ;
         modelldcatno:hasSimpleType          digdir:Heltall ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:Kvinne  a         modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Kvinne"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Kvinne"^^xsd:anyURI ;
         skos:inScheme   digdir:Kjønn ;
         skos:topConceptOf digdir:Kjønn ;
         xkos:next         digdir:Mann ;
         skos:prefLabel "kvinne"@nb ;
-        skos:notation  "kvinne"^^xsd:string .
+        skos:notation  "kvinne" .
 
 digdir:Mann  a           modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Mann"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Mann"^^xsd:anyURI ;
         skos:inScheme   digdir:Kjønn ;
         xkos:next       digdir:Ubestemt ;
         skos:prefLabel "mann"@nb ;
-        skos:notation  "mann"^^xsd:string .
+        skos:notation  "mann" .
 
 digdir:Ubestemt  a       modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ubestemt"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ubestemt"^^xsd:anyURI ;
         skos:inScheme   digdir:Kjønn ;
         xkos:next       digdir:Ukjent ;
         skos:prefLabel "ubestemt"@nb ;
-        skos:notation  "ubestemt"^^xsd:string .
+        skos:notation  "ubestemt" .
 
 digdir:Ukjent  a         modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ukjent"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ukjent"^^xsd:anyURI ;
         skos:inScheme   digdir:Sivilstand ;
         skos:prefLabel "sivilstand ukjent"@nb ;
-        skos:notation  "ukjent"^^xsd:string .
+        skos:notation  "ukjent" .
 
 digdir:Ugift  a             modelldcatno:CodeElement ;
-        dct:identifier    "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ugift"^^xsd:string ;
+        dct:identifier    "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Ugift"^^xsd:anyURI ;
         skos:inScheme     digdir:Sivilstand ;
         dct:subject       <http://begrepskatalogen/begrep/92f82e89-fb04-11e9-92b0-005056828ed3> ;
         xkos:next         digdir:Gift ;
         skos:topConceptOf digdir:Sivilstand ;
         skos:prefLabel    "sivilstand ugift"@nb ;
-        skos:notation     "ugift"^^xsd:string .
+        skos:notation     "ugift" .
 
 digdir:Gift  a           modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Gift"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Gift"^^xsd:anyURI ;
         skos:inScheme   digdir:Sivilstand ;
         dct:subject     <http://begrepskatalogen/begrep/92f82e8a-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:EnkeEllerEnkemann ;
         skos:prefLabel  "sivilstand gift"@nb ;
-        skos:notation   "gift"^^xsd:string .
+        skos:notation   "gift" .
 
 digdir:EnkeEllerEnkemann
         a                modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#EnkeEllerEnkemann"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#EnkeEllerEnkemann"^^xsd:anyURI ;
         skos:inScheme   digdir:Sivilstand ;
         dct:subject     <http://begrepskatalogen/begrep/92f82e8b-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:Separert ;
         skos:prefLabel "sivilstand enke eller enkemann"@nb ;
-        skos:notation  "enkeEllerEnkemann"^^xsd:string .
+        skos:notation  "enkeEllerEnkemann" .
 
 digdir:Skilt  a          modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Skilt"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Skilt"^^xsd:anyURI ;
         skos:inScheme   digdir:Sivilstand ;
         dct:subject     <http://begrepskatalogen/begrep/92f82e8c-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:RegistrertPartner ;
         skos:prefLabel "sivilstand skilt"@nb ;
-        skos:notation  "skilt"^^xsd:string .
+        skos:notation  "skilt" .
 
 digdir:Separert  a       modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Separert"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Separert"^^xsd:anyURI ;
         skos:inScheme   digdir:Sivilstand ;
         dct:subject     <http://begrepskatalogen/begrep/92f82e8d-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:Skilt ;
         skos:prefLabel "sivilstand separert"@nb ;
-        skos:notation  "separert"^^xsd:string .
+        skos:notation  "separert" .
 
 digdir:RegistrertPartner
         a                modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#RegistrertPartner"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#RegistrertPartner"^^xsd:anyURI ;
         skos:inScheme   digdir:Sivilstand ;
         dct:subject     <http://begrepskatalogen/begrep/92f82e8e-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:SeparertPartner ;
         skos:prefLabel "sivilstand registrert partner"@nb ;
-        skos:notation  "registrertPartner"^^xsd:string .
+        skos:notation  "registrertPartner" .
 
 digdir:SeparertPartner
         a                modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#SeparertPartner"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#SeparertPartner"^^xsd:anyURI ;
         skos:inScheme   digdir:Sivilstand ;
         dct:subject     <http://begrepskatalogen/begrep/92f82e8f-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:SkiltPartner ;
         skos:prefLabel "sivilstand separert partner"@nb ;
-        skos:notation "separertPartner"^^xsd:string .
+        skos:notation "separertPartner" .
 
 digdir:SkiltPartner  a   modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#SkiltPartner"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#SkiltPartner"^^xsd:anyURI ;
         skos:inScheme   digdir:Sivilstand ;
         dct:subject     <http://begrepskatalogen/begrep/92f82e90-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:GjenlevendePartner ;
         skos:prefLabel "sivilstand skilt partner"@nb ;
-        skos:notation  "skiltPartner"^^xsd:string .
+        skos:notation  "skiltPartner" .
 
 digdir:GjenlevendePartner
         a                modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#GjenlevendePartner"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#GjenlevendePartner"^^xsd:anyURI ;
         skos:inScheme   digdir:Sivilstand ;
         dct:subject     <http://begrepskatalogen/begrep/92f82e91-fb04-11e9-92b0-005056828ed3> ;
         xkos:next       digdir:Uoppgitt ;
         skos:prefLabel  "sivilstand gjenlevende partner"@nb ;
-        skos:notation   "gjenlevendePartner"^^xsd:string .
+        skos:notation   "gjenlevendePartner" .
 
 digdir:Uoppgitt  a       modelldcatno:CodeElement ;
-        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Uoppgitt"^^xsd:string ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Uoppgitt"^^xsd:anyURI ;
         skos:inScheme   digdir:Sivilstand ;
         dct:subject     <http://begrepskatalogen/begrep/92f82e88-fb04-11e9-92b0-005056828ed3> ;
         skos:prefLabel "sivilstand uoppgitt"@nb ;
-        skos:notation  "uoppgitt"^^xsd:string .
+        skos:notation  "uoppgitt" .
 
 digdir:enhetSpesialiserer a       modelldcatno:Specialization ;
         modelldcatno:hasGeneralConcept digdir:Aktør .
