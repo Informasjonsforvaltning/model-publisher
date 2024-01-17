@@ -206,202 +206,202 @@
    rdfs:seeAlso <https://informasjonsforvaltning.github.io/xkos-ap-no/#ForenkletModell>;
    .
  
- ### følgende skal tilbakketrekkes
+ ### følgende som var tilbaketrukket, skjules ved at de ikke tas med i katalogen
 
  <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#catalog-of-specification-models>
    rdf:type dcat:Catalog;
    dct:description """This catalog contains descriptions of the information models in national specifications and standards maintained by the Norwegian Digitalisation Agency (Digdir)."""@en,
        """Katalogen inneholder beskrivelser av informasjonsmodeller i nasjonale spesifikasjoner og forvaltningsstandarder som er forvaltet av Digitaliseringsdirektoratet (Digdir)."""@nb;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#catalog-of-specification-models"^^xsd:anyURI;
-   modelldcatno:model <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dcat-ap-no-model>,
-       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-model>,
-       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-model>,
-       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#concept-descriptions-mdoel>,
-       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-model>,
-       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#xkos-ap-no-model>;
+#   modelldcatno:model <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dcat-ap-no-model>,
+#       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-model>,
+#       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-model>,
+#       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#concept-descriptions-mdoel>,
+#       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-model>,
+#       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#xkos-ap-no-model>;
    dct:title """Digdir's catalog of information models for various national specifications and standards"""@en,
        """Digdirs katalog over informasjonsmodeller for ulike nasjonale spesifikasjoner og standarder"""@nb;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:modified "2023-09-29"^^xsd:date;
+   dct:modified "2024-01-16"^^xsd:date;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
        <http://publications.europa.eu/resource/authority/language/NOB>;
    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>
-   rdf:type vcard:Organization;
-   vcard:hasOrganizationName """Norwegian Digitalisation Agency"""@en,
-       """Digitaliseringsdirektoratet"""@nb,
-       """Digitaliseringsdirektoratet"""@nn;
-   vcard:hasEmail "mailto:informasjonsforvaltning@digdir.no"^^xsd:anyURI;
-   vcard:hasURL <https://digdir.no>;
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>
+#    rdf:type vcard:Organization;
+#    vcard:hasOrganizationName """Norwegian Digitalisation Agency"""@en,
+#        """Digitaliseringsdirektoratet"""@nb,
+#        """Digitaliseringsdirektoratet"""@nn;
+#    vcard:hasEmail "mailto:informasjonsforvaltning@digdir.no"^^xsd:anyURI;
+#    vcard:hasURL <https://digdir.no>;
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dcat-ap-no-model>
-   rdf:type modelldcatno:InformationModel;
-   dct:title """Information model for DCAT-AP-NO"""@en,
-       """Informasjonsmodell for DCAT-AP-NO"""@nb;
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for the Norwegian application profile of DCAT, DCAT-AP-NO."""@en,
-       """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)\"."""@nb;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dcat-ap-no-model"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
-   dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dcat-ap-no-png>;
-   adms:status <http://purl.org/adms/status/Withdrawn>;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
-   dct:issued "2020-10-29"^^xsd:date;
-   owl:versionInfo """2.1""";
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dcat-ap-no-model>
+#    rdf:type modelldcatno:InformationModel;
+#    dct:title """Information model for DCAT-AP-NO"""@en,
+#        """Informasjonsmodell for DCAT-AP-NO"""@nb;
+#    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+#    dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for the Norwegian application profile of DCAT, DCAT-AP-NO."""@en,
+#        """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)\"."""@nb;
+#    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dcat-ap-no-model"^^xsd:anyURI;
+#    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
+#    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
+#    dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dcat-ap-no-png>;
+#    adms:status <http://purl.org/adms/status/Withdrawn>;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
+#    dct:issued "2020-10-29"^^xsd:date;
+#    owl:versionInfo """2.1""";
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-model>
-   rdf:type modelldcatno:InformationModel;
-   dct:title """Information model for DQV-AP-NO"""@en,
-       """Informasjonsmodell for DQV-AP-NO"""@nb;
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for \"DQV-AP-NO (Norwegian application profile of DQV)\"."""@en,
-       """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"DQV-AP-NO (Norsk applikasjonsprofil av DQV)\"."""@nb;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-model"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
-   dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-html>;
-   adms:status <http://purl.org/adms/status/Withdrawn>;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
-   dct:issued "2020-10-21"^^xsd:date;
-   owl:versionInfo """1""";
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-model>
+#    rdf:type modelldcatno:InformationModel;
+#    dct:title """Information model for DQV-AP-NO"""@en,
+#        """Informasjonsmodell for DQV-AP-NO"""@nb;
+#    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+#    dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for \"DQV-AP-NO (Norwegian application profile of DQV)\"."""@en,
+#        """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"DQV-AP-NO (Norsk applikasjonsprofil av DQV)\"."""@nb;
+#    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-model"^^xsd:anyURI;
+#    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
+#    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
+#    dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-html>;
+#    adms:status <http://purl.org/adms/status/Withdrawn>;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
+#    dct:issued "2020-10-21"^^xsd:date;
+#    owl:versionInfo """1""";
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-model>
-   rdf:type modelldcatno:InformationModel;
-   dct:title """Information model for ModellDCAT-AP-NO"""@en,
-       """Informasjonsmodell for ModellDCAT-AP-NO"""@nb;
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for \"Specification for description of information models (ModellDCAT-AP-NO)\"."""@en,
-       """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"Spesifikasjon for beskrivelse av informasjonsmodeller (ModellDCAT-AP-NO)\"."""@nb;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-model"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
-   dct:modified "2023-07-03"^^xsd:date;
-   dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-png>;
-   adms:status <http://purl.org/adms/status/Withdrawn>;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
-   dct:issued "2022-08-26"^^xsd:date;
-   owl:versionInfo """1.3""";
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-model>
+#    rdf:type modelldcatno:InformationModel;
+#    dct:title """Information model for ModellDCAT-AP-NO"""@en,
+#        """Informasjonsmodell for ModellDCAT-AP-NO"""@nb;
+#    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+#    dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for \"Specification for description of information models (ModellDCAT-AP-NO)\"."""@en,
+#        """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"Spesifikasjon for beskrivelse av informasjonsmodeller (ModellDCAT-AP-NO)\"."""@nb;
+#    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-model"^^xsd:anyURI;
+#    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
+#    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
+#    dct:modified "2023-07-03"^^xsd:date;
+#    dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-png>;
+#    adms:status <http://purl.org/adms/status/Withdrawn>;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
+#    dct:issued "2022-08-26"^^xsd:date;
+#    owl:versionInfo """1.3""";
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#concept-descriptions-mdoel>
-   rdf:type modelldcatno:InformationModel;
-   dct:title """Information model for descriptions of concepts"""@en,
-       """Informasjonsmodell for begrepsbeskrivelser"""@nb;
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for \"Standard for concept descriptions\"."""@en,
-       """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"Forvaltningsstandard for begrepsbeskrivelser\"."""@nb;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#concept-descriptions-mdoel"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
-   dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#concept-descriptions-png>;
-   adms:status <http://purl.org/adms/status/Withdrawn>;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
-   dct:issued "2019-03-15"^^xsd:date;
-   owl:versionInfo """2.0""";
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#concept-descriptions-mdoel>
+#    rdf:type modelldcatno:InformationModel;
+#    dct:title """Information model for descriptions of concepts"""@en,
+#        """Informasjonsmodell for begrepsbeskrivelser"""@nb;
+#    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+#    dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for \"Standard for concept descriptions\"."""@en,
+#        """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"Forvaltningsstandard for begrepsbeskrivelser\"."""@nb;
+#    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#concept-descriptions-mdoel"^^xsd:anyURI;
+#    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
+#    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
+#    dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#concept-descriptions-png>;
+#    adms:status <http://purl.org/adms/status/Withdrawn>;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
+#    dct:issued "2019-03-15"^^xsd:date;
+#    owl:versionInfo """2.0""";
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-model>
-   rdf:type modelldcatno:InformationModel;
-   dct:title """Information model for CPSV-AP-NO"""@en,
-       """Informasjonsmodell for CPSV-AP-NO"""@nb;
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/af1ee647-9e46-4cd8-9607-d32d1551cab3>,
-       <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/96caf654-e8fc-42c6-8319-2dfa264136b8>,
-       <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/4edbe539-9e64-4e74-8505-091f0a57bc9b>,
-       <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/e51d808c-f6f9-45f6-939f-b36b446760ba>,
-       <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/a727e473-28a0-4562-b4ec-38fc8ff4ce66>;
-   dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for \"Specification for description of services and events (CPSV-AP-NO)\"."""@en,
-       """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"Spesifikasjon for tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO)\"."""@nb;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-model"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
-   dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-png>;
-   adms:status <http://purl.org/adms/status/Withdrawn>;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
-   dct:issued "2022-02-08"^^xsd:date;
-   owl:versionInfo """0.9""";
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-model>
+#    rdf:type modelldcatno:InformationModel;
+#    dct:title """Information model for CPSV-AP-NO"""@en,
+#        """Informasjonsmodell for CPSV-AP-NO"""@nb;
+#    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+#    dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/af1ee647-9e46-4cd8-9607-d32d1551cab3>,
+#        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/96caf654-e8fc-42c6-8319-2dfa264136b8>,
+#        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/4edbe539-9e64-4e74-8505-091f0a57bc9b>,
+#        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/e51d808c-f6f9-45f6-939f-b36b446760ba>,
+#        <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/a727e473-28a0-4562-b4ec-38fc8ff4ce66>;
+#    dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for \"Specification for description of services and events (CPSV-AP-NO)\"."""@en,
+#        """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"Spesifikasjon for tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO)\"."""@nb;
+#    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-model"^^xsd:anyURI;
+#    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
+#    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
+#    dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-png>;
+#    adms:status <http://purl.org/adms/status/Withdrawn>;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
+#    dct:issued "2022-02-08"^^xsd:date;
+#    owl:versionInfo """0.9""";
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#xkos-ap-no-model>
-   rdf:type modelldcatno:InformationModel;
-   dct:title """Information model for XKOS-AP-NO"""@en,
-       """Informasjonsmodell for XKOS-AP-NO"""@nb;
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for \"Specification for description of classifications (XKOS-AP-NO)\"."""@en,
-       """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO)\"."""@nb;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#xkos-ap-no-model"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
-   dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#xkos-ap-no-png>;
-   adms:status <http://purl.org/adms/status/UnderDevelopment>;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
-   dct:issued "2022-06-28"^^xsd:date;
-   owl:versionInfo """1.0""";
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#xkos-ap-no-model>
+#    rdf:type modelldcatno:InformationModel;
+#    dct:title """Information model for XKOS-AP-NO"""@en,
+#        """Informasjonsmodell for XKOS-AP-NO"""@nb;
+#    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+#    dct:description """WITHDRAWN (because of double entry in the catalog) - Information model for \"Specification for description of classifications (XKOS-AP-NO)\"."""@en,
+#        """TILBAKETRUKKET (pga. dobbel oppføring i katalogen) - Informasjonsmodell for \"Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO)\"."""@nb;
+#    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#xkos-ap-no-model"^^xsd:anyURI;
+#    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#digdir-contact-point>;
+#    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
+#    dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#xkos-ap-no-png>;
+#    adms:status <http://purl.org/adms/status/UnderDevelopment>;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
+#    dct:issued "2022-06-28"^^xsd:date;
+#    owl:versionInfo """1.0""";
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dcat-ap-no-png>
-   rdf:type foaf:Document;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:title """UML diagram with all classes and properties in DCAT-AP-NO"""@en,
-       """UML-diagram over alle klassene og egenskapene i DCAT-AP-NO"""@nb;
-   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://data.norge.no/specification/dcat-ap-no/#UML-diagram>;
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dcat-ap-no-png>
+#    rdf:type foaf:Document;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:title """UML diagram with all classes and properties in DCAT-AP-NO"""@en,
+#        """UML-diagram over alle klassene og egenskapene i DCAT-AP-NO"""@nb;
+#    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+#    rdfs:seeAlso <https://data.norge.no/specification/dcat-ap-no/#UML-diagram>;
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-html>
-   rdf:type foaf:Document;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:title """Simplified model for DQV-AP-NO"""@en,
-       """Forenklet modell for DQV-AP-NO"""@nb;
-   dct:format <http://publications.europa.eu/resource/authority/file-type/HTML>;
-   rdfs:seeAlso <https://data.norge.no/specification/dqv-ap-no/#Forenklet_modell_for_DQV-AP-NO>;
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#dqv-ap-no-html>
+#    rdf:type foaf:Document;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:title """Simplified model for DQV-AP-NO"""@en,
+#        """Forenklet modell for DQV-AP-NO"""@nb;
+#    dct:format <http://publications.europa.eu/resource/authority/file-type/HTML>;
+#    rdfs:seeAlso <https://data.norge.no/specification/dqv-ap-no/#Forenklet_modell_for_DQV-AP-NO>;
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-png>
-   rdf:type foaf:Document;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:title """Simplified model for ModellDCAT-AP-NO"""@en,
-       """Forenklet modell for ModellDCAT-AP-NO"""@nb;
-   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://data.norge.no/specification/modelldcat-ap-no/#Forenklet-modell>;
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#modelldcat-ap-no-png>
+#    rdf:type foaf:Document;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:title """Simplified model for ModellDCAT-AP-NO"""@en,
+#        """Forenklet modell for ModellDCAT-AP-NO"""@nb;
+#    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+#    rdfs:seeAlso <https://data.norge.no/specification/modelldcat-ap-no/#Forenklet-modell>;
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#concept-descriptions-png>
-   rdf:type foaf:Document;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:title """UML model which describes requirements to descriptions of concepts and concept collections"""@en,
-       """UML-modell som beskriver krav til innhold i beskrivelse av begreper og begrepssamlinger"""@nb;
-   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/#vedlegga>;
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#concept-descriptions-png>
+#    rdf:type foaf:Document;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:title """UML model which describes requirements to descriptions of concepts and concept collections"""@en,
+#        """UML-modell som beskriver krav til innhold i beskrivelse av begreper og begrepssamlinger"""@nb;
+#    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+#    rdfs:seeAlso <https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/#vedlegga>;
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-png>
-   rdf:type foaf:Document;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:title """Simplified model for CPSV-AP-NO"""@en,
-       """Forenklet modell for CPSV-AP-NO"""@nb;
-   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://informasjonsforvaltning.github.io/cpsv-ap-no/#Forenklet_modell>;
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#cpsv-ap-no-png>
+#    rdf:type foaf:Document;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:title """Simplified model for CPSV-AP-NO"""@en,
+#        """Forenklet modell for CPSV-AP-NO"""@nb;
+#    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+#    rdfs:seeAlso <https://informasjonsforvaltning.github.io/cpsv-ap-no/#Forenklet_modell>;
+#    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#xkos-ap-no-png>
-   rdf:type foaf:Document;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:title """Simplified model for XKOS-AP-NO"""@en,
-       """Forenklet modell for XKOS-AP-NO"""@nb;
-   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://informasjonsforvaltning.github.io/xkos-ap-no/#ForenkletModell>;
-   .
+# <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#xkos-ap-no-png>
+#    rdf:type foaf:Document;
+#    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+#    dct:title """Simplified model for XKOS-AP-NO"""@en,
+#        """Forenklet modell for XKOS-AP-NO"""@nb;
+#    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+#    rdfs:seeAlso <https://informasjonsforvaltning.github.io/xkos-ap-no/#ForenkletModell>;
+#    .
 
 #### End of the file, 2023-03-09 08:51:34
