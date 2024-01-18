@@ -208,7 +208,7 @@
  
  ### følgende som var tilbaketrukket, skjules ved at de ikke tas med i katalogen
 
- <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#catalog-of-specification-models>
+ <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#catalog-of-spesification-models>
    rdf:type dcat:Catalog;
    dct:description """This catalog contains descriptions of the information models in national specifications and standards maintained by the Norwegian Digitalisation Agency (Digdir)."""@en,
        """Katalogen inneholder beskrivelser av informasjonsmodeller i nasjonale spesifikasjoner og forvaltningsstandarder som er forvaltet av Digitaliseringsdirektoratet (Digdir)."""@nb;
