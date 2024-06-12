@@ -12,6 +12,7 @@
 @prefix xkos: <https://rdf-vocabulary.ddialliance.org/xkos/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> .
+@prefix infomodeltype: <https://data.norge.no/vocabulary/information-model-type#> .
 
 digdir:PersonOgEnhet  a         modelldcatno:InformationModel ;
         modelldcatno:containsModelElement
@@ -27,7 +28,7 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
         owl:versionInfo         "1.0" ;
         adms:status             <http://purl.org/adms/status/Completed> ;
-        dct:type                modelldcatno:commonSharedModel , modelldcatno:logicalModel ;
+        dct:type                infomodeltype:commonSharedModel , infomodeltype:logicalModel ;
         dct:subject             <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/20febfaa-9467-48ea-9219-8ea611321f22> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c1197a7-5c17-48f6-b399-a031d66cd8da> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/f34cf23b-abfc-4413-8d46-afd175e1c872> ,
                                 <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/94328aca-770b-4502-95e5-94e44cb6d62f> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> , <http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0> , <http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0> ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
@@ -49,7 +50,7 @@ digdir:AdresseModell  a              modelldcatno:InformationModel ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         owl:versionInfo         "1.0" ;
         adms:status             <http://purl.org/adms/status/Completed> ;
-        dct:type                modelldcatno:commonSharedModel , modelldcatno:logicalModel ;
+        dct:type                infomodeltype:commonSharedModel , infomodeltype:logicalModel ;
         dct:subject             <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/fea0e9f2-3b62-4c6b-9df3-27dd2f7cd530> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/0be32f31-fed4-4b07-ac1d-1892c86e8aa9> ,
                                 <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/fdcb929f-cb81-46d6-b419-b6ac520ed065> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/f6d85b38-f7e3-4764-8e51-9627ccd72569> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/6c87006e-2bae-4424-9523-48d4cf4cc9bf> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/9acc8b93-ae2f-4464-9a45-7e691d7dd19a> ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
