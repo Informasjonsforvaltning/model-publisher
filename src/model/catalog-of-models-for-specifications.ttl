@@ -29,7 +29,7 @@
    dct:title """Digdir's catalog of information models for various national specifications and standards"""@en,
        """Digdirs katalog over informasjonsmodeller for ulike nasjonale spesifikasjoner og standarder"""@nb;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:modified "2024-01-26"^^xsd:date;
+   dct:modified "2024-11-20"^^xsd:date;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
        <http://publications.europa.eu/resource/authority/language/NOB>;
    .
@@ -57,8 +57,8 @@
    adms:status <http://purl.org/adms/status/Completed>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
-   dct:issued "2020-10-29"^^xsd:date;
-   owl:versionInfo """2.1""";
+   dct:issued "2022-05-25"^^xsd:date;
+   owl:versionInfo """2.2""";
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#dqv-ap-no-model>
@@ -132,12 +132,13 @@
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#cpsv-ap-no-model"^^xsd:anyURI;
    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#digdir-contact-point>;
    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
+   dct:modified "2024-10-07"^^xsd:date;
    dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#cpsv-ap-no-png>;
-   adms:status <http://purl.org/adms/status/UnderDevelopment>;
+   adms:status <http://purl.org/adms/status/Completed>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
    dct:issued "2023-09-08"^^xsd:date;
-   owl:versionInfo """1""";
+   owl:versionInfo """1.1""";
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#skos-ap-no-begrep-model>
@@ -228,7 +229,7 @@
    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#digdir-contact-point>;
    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
    dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#xkos-ap-no-png>;
-   adms:status <http://purl.org/adms/status/UnderDevelopment>;
+   adms:status <http://purl.org/adms/status/Completed>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
    dct:issued "2022-06-28"^^xsd:date;
@@ -274,10 +275,10 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#cpsv-ap-no-png>
    rdf:type foaf:Document;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:title """Simplified model for CPSV-AP-NO"""@en,
-       """Forenklet modell for CPSV-AP-NO"""@nb;
+   dct:title """Classes in CPSV-AP-NO"""@en,
+       """Klassene i CPSV-AP-NO"""@nb;
    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://data.norge.no/specification/cpsv-ap-no/images/ForenkletModell-CPSV-AP-NO.png>;
+   rdfs:seeAlso <https://data.norge.no/specification/cpsv-ap-no/images/CPSV-AP-NO-klasser.png>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#skos-ap-no-begrep-html>
@@ -325,4 +326,4 @@
    rdfs:seeAlso <https://data.norge.no/specification/xkos-ap-no#ForenkletModell>;
    .
  
-#### End of the file, 2024-01-26 11:57:53
+#### End of the file, 2024-11-20 12:49:08
