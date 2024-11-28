@@ -25,11 +25,12 @@
        <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#skos-ap-no-begrep-only-mandatory-model>,
        <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#skos-ap-no-begrep-without-relations-model>,
        <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#skos-ap-no-begrep-only-relations-model>,
-       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#xkos-ap-no-model>;
+       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#xkos-ap-no-model>,
+       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#hvd-dcat-ap-no-model>;
    dct:title """Digdir's catalog of information models for various national specifications and standards"""@en,
        """Digdirs katalog over informasjonsmodeller for ulike nasjonale spesifikasjoner og standarder"""@nb;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:modified "2024-11-20"^^xsd:date;
+   dct:modified "2024-11-27"^^xsd:date;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
        <http://publications.europa.eu/resource/authority/language/NOB>;
    .
@@ -41,6 +42,9 @@
        """Digitaliseringsdirektoratet"""@nn;
    vcard:hasEmail "mailto:informasjonsforvaltning@digdir.no"^^xsd:anyURI;
    vcard:hasURL <https://digdir.no>;
+   foaf:name """Norwegian Digitalisation Agency"""@en,
+       """Digitaliseringsdirektoratet"""@nb,
+       """Digitaliseringsdirektoratet"""@nn;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#dcat-ap-no-model>
@@ -48,7 +52,7 @@
    dct:title """Information model for DCAT-AP-NO"""@en,
        """Informasjonsmodell for DCAT-AP-NO"""@nb;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:description """Information model for the Norwegian application profile of DCAT, DCAT-AP-NO."""@en,
+   dct:description """Information model for DCAT-AP-NO which is the Norwegian application profile of DCAT/DCAT-AP."""@en,
        """Informasjonsmodell for \"Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)\"."""@nb;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#dcat-ap-no-model"^^xsd:anyURI;
    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#digdir-contact-point>;
@@ -57,8 +61,8 @@
    adms:status <http://purl.org/adms/status/Completed>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
-   dct:issued "2022-05-25"^^xsd:date;
-   owl:versionInfo """2.2""";
+   dct:issued "2024-11-26"^^xsd:date;
+   owl:versionInfo """3.0""";
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#dqv-ap-no-model>
@@ -77,6 +81,24 @@
    dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
    dct:issued "2020-10-21"^^xsd:date;
    owl:versionInfo """1""";
+   .
+ 
+<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#hvd-dcat-ap-no-model>
+   rdf:type modelldcatno:InformationModel;
+   dct:title """Simplified information model for HVD-DCAT-AP-NO"""@en,
+       """Forenklet informasjonsmodell for HVD-DCAT-AP-NO"""@nb;
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+   dct:description """Simplified information model for the \"Specification for description of high value datasets\"."""@en,
+       """Forenklet informasjonsmodell for \"Standard for beskrivelse av datasett med høy verdi (HVD-DCAT-AP-NO)\"."""@nb;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#hvd-dcat-ap-no-model"^^xsd:anyURI;
+   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#digdir-contact-point>;
+   dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
+   dct:hasFormat <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#hvd-dcat-ap-no-png>;
+   adms:status <http://purl.org/adms/status/Completed>;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:type <https://data.norge.no/vocabulary/information-model-type#conceptual-model>;
+   dct:issued "2024-11-26"^^xsd:date;
+   owl:versionInfo """3.0""";
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#modelldcat-ap-no-model>
@@ -239,10 +261,10 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#dcat-ap-no-png>
    rdf:type foaf:Document;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:title """UML diagram with all classes and properties in DCAT-AP-NO"""@en,
-       """UML-diagram over alle klassene og egenskapene i DCAT-AP-NO"""@nb;
+   dct:title """Overview of the classes in DCAT-AP-NO and some of the relations between the classes."""@en,
+       """Oversikt over klassene i DCAT-AP-NO og noen relasjoner mellom dem"""@nb;
    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://data.norge.no/specification/dcat-ap-no/#UML-diagram>;
+   rdfs:seeAlso <https://data.norge.no/specification/dcat-ap-no/images/DCAT-AP-NO-klasser.png>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#dqv-ap-no-html>
@@ -252,6 +274,15 @@
        """Forenklet modell for DQV-AP-NO"""@nb;
    dct:format <http://publications.europa.eu/resource/authority/file-type/HTML>;
    rdfs:seeAlso <https://data.norge.no/specification/dqv-ap-no/#Forenklet_modell_for_DQV-AP-NO>;
+   .
+ 
+<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#hvd-dcat-ap-no-png>
+   rdf:type foaf:Document;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:title """Simplified presentation of the requirements in HVD-DCAT-AP-NO, with only mandatory and recommended requirements."""@en,
+       """Forenklet fremstilling av kravene i HVD-DCAT-AP-NO, med kun obligatoriske og anbefalte krav."""@nb;
+   dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
+   rdfs:seeAlso <https://data.norge.no/specification/hvd-dcat-ap-no/images/HVD-DCAT-AP-NO-forenklet-fremstilling.png>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#modelldcat-ap-no-png>
@@ -326,4 +357,4 @@
    rdfs:seeAlso <https://data.norge.no/specification/xkos-ap-no#ForenkletModell>;
    .
  
-#### End of the file, 2024-11-20 12:49:08
+#### End of the file, 2024-11-27 10:15:08
